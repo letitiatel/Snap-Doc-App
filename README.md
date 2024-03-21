@@ -4,7 +4,7 @@ Project developed for the 'Software Development Methods' course within the Facul
 * @letitiatel
 * @anamaria29s
 * @alexandramocanu1
-  
+  buna
 ## Describing the app - (non-tehnical description - user stories, backlog creation)
 ### 1. User Stories
 1.As a student, I want to scan text from my textbooks so that I can save important notes as a PDF for future reference during exams.
