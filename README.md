@@ -1,2 +1,2 @@
 # Snap-Doc-App
-#Describing the app - (non-tehnical description - user stories, backlog creation, features list, design description, behavior description)
+Proiect realizat pentru disciplina "Metode de dezvoltare software" din cadrul Facultății de Matematică și Informatică, Universitatea București.
