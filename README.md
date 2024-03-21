@@ -4,7 +4,7 @@ Project developed for the 'Software Development Methods' course within the Facul
 
 aaaaaaaa
 ## Describing the app - (non-tehnical description - user stories, backlog creation)
-### 1.User Stories
+### 1. User Stories
 1.As a student, I want to scan text from my textbooks so that I can save important notes as a PDF for future reference during exams.
 
 2.As a journalist, I need to scan interview transcripts and save them as Word documents to easily edit and reference quotes for my articles.
