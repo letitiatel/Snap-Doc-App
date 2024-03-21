@@ -1,5 +1,5 @@
 # Snap-Doc-App
-## Describing the app - (non-tehnical description - user stories, backlog creation, features list, design description, behavior description)
+## Describing the app - (non-tehnical description - user stories, backlog creation,)
 ### 1. User stories
 1.As a student, I want to scan text from my textbooks so that I can save important notes as a PDF for future reference during exams.
 
