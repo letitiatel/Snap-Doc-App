@@ -5,7 +5,7 @@ Project developed for the 'Software Development Methods' course within the Facul
 - [Suditu Ana_Maria](https://github.com/anamaria29s)
 - [Mocanu Alexandra](https://github.com/alexandramocanu1)
 
-## Describing the app - (non-tehnical description - user stories, backlog creation)
+## Describing the app - (non-tehnical description - user stories, backlog creation, features list)
 ### 1. User Stories
 1.As a student, I want to scan text from my textbooks so that I can save important notes as a PDF for future reference during exams.
 
