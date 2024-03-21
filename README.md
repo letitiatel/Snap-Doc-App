@@ -1,5 +1,7 @@
 # Snap-Doc-App
 Project developed for the 'Software Development Methods' course within the Faculty of Mathematics and Computer Science, University of Bucharest.
+## Members
+
 
 ## Describing the app - (non-tehnical description - user stories, backlog creation)
 ### 1.User Stories
