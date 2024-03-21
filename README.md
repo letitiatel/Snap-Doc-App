@@ -5,6 +5,8 @@ Project developed for the 'Software Development Methods' course within the Facul
 - [Suditu Ana_Maria](https://github.com/anamaria29s)
 - [Mocanu Alexandra](https://github.com/alexandramocanu1)
 
+Scan&Doc  is an app designed to effortlessly capture text from physical documents or images using your device's camera. With powerful OCR technology, it accurately extracts text and offers seamless conversion options, allowing you to save it as PDF, Word, or other popular formats. Edit, enhance, and manage your scanned documents with ease, and effortlessly share or sync them across devices. Whether you're a student, professional, or enthusiast, Scan&Doc simplifies text scanning and document management on the go.
+
 ## Describing the app - (non-tehnical description - user stories, backlog creation, features list)
 ### 1. User Stories
 1.As a student, I want to scan text from my textbooks so that I can save important notes as a PDF for future reference during exams.
