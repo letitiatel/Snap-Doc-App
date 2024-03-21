@@ -1,11 +1,10 @@
 # Snap-Doc-App
 Project developed for the 'Software Development Methods' course within the Faculty of Mathematics and Computer Science, University of Bucharest.
 ## Members
-* @letitiatel
-* @anamaria29s
-* @alexandramocanu1
-  buna
-  hello
+- [Telicov Letitia-Ioana](https://github.com/letitiatel).
+- [Suditu Ana_maria](https://github.com/anamaria29s).
+- [Mocanu Alexandra](https://github.com/alexandramocanu1).
+
 ## Describing the app - (non-tehnical description - user stories, backlog creation)
 ### 1. User Stories
 1.As a student, I want to scan text from my textbooks so that I can save important notes as a PDF for future reference during exams.
