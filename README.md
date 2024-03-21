@@ -2,7 +2,7 @@
 Project developed for the 'Software Development Methods' course within the Faculty of Mathematics and Computer Science, University of Bucharest.
 ## Members
 - [Telicov Letitia-Ioana](https://github.com/letitiatel)
-- [Suditu Ana_maria](https://github.com/anamaria29s)
+- [Suditu Ana_Maria](https://github.com/anamaria29s)
 - [Mocanu Alexandra](https://github.com/alexandramocanu1)
 
 ## Describing the app - (non-tehnical description - user stories, backlog creation)
