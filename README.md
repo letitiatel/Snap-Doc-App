@@ -36,6 +36,7 @@ Project developed for the 'Software Development Methods' course within the Facul
 14.As a project manager, I want to scan project briefs and save them as Word documents to distribute to team members for clarity on project objectives and deliverables.
 
 ### 2. Backlog Creation
+This site was built using [Trello](https://trello.com/b/Y3UW7ffC/scandoc-app).
 
 
 
