@@ -1,2 +1,2 @@
 # Snap-Doc-App
-Proiect realizat pentru disciplina "Metode de dezvoltare software" din cadrul Facultății de Matematică și Informatică, Universitatea București.
+Project developed for the 'Software Development Methods' course within the Faculty of Mathematics and Computer Science, University of Bucharest.
