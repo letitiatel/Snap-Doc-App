@@ -38,5 +38,13 @@ Project developed for the 'Software Development Methods' course within the Facul
 ### 2. Backlog Creation
 We monitorized our backlog creation using Trello. It can be found [here](https://trello.com/b/Y3UW7ffC/scandoc-app).
 
+### 3. Features List
+- Ability to use the device's camera to scan text from physical documents or images.
+- Manual adjustment options for text cropping and rotation.
+- Chosing a photo from the gallery/ from Drive.
+- Viewing, organizing, and managing scanned documents.
+- Options to rename, delete, or share scanned documents.
+  
+
 
 
