@@ -2,6 +2,7 @@
 ## Describing the app - (non-tehnical description - user stories, backlog creation, features list, design description, behavior description)
 ### 1. User stories
 1.As a student, I want to scan text from my textbooks so that I can save important notes as a PDF for future reference during exams.
+
 2.As a journalist, I need to scan interview transcripts and save them as Word documents to easily edit and reference quotes for my articles.
 3.As a business professional, I want to scan meeting notes and export them as PDFs to share with colleagues who couldn't attend the meeting.
 4.As a researcher, I need to scan research papers and save them as PDFs for citation purposes in my own studies.
