@@ -58,7 +58,7 @@ We monitorized our backlog creation using Trello. It can be found [here](https:/
 
 
 ### 5. Source control
-Branches: [https://github.com/letitiatel/Snap-Doc-App/branches](https://github.com/letitiatel/Snap-Doc-App/branches).
+Branches: [https://github.com/letitiatel/Snap-Doc-App/branches](https://github.com/letitiatel/Snap-Doc-App/branches)
 
 
   
