@@ -8,11 +8,13 @@ import android.view.Menu;
 import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -27,16 +29,46 @@ public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigatonView;
 
-    //@Override
-    protected void OnCreate(Bundle savedInstanceState){
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         bottomNavigatonView = findViewById(R.id.bottomNavigationView);
+
+        loadImagesFragment();
+        loadPdfsFragment();
+        bottomNavigatonView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                int itemId = menuItem.getItemId();
+                if(itemId == R.id.bottom_menu_images){
+                    loadImagesFragment();
+                }
+                else if (itemId == R.id.bottom_menu_pdfs){
+                    loadPdfsFragment();
+                }
+
+                return false;
+            }
+        });
     }
 
+    private void loadPdfsFragment() {
+        setTitle("PDF List");
+        PdfListFragment pdfListFragment = new PdfListFragment();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frameLayout, pdfListFragment, "PdfListFragment");
+        fragmentTransaction.commit();
+    }
 
-
+    private void loadImagesFragment() {
+        setTitle("Images");
+        ImageListFragment imageListFragment = new ImageListFragment();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.frameLayout, imageListFragment, "ImageListFragment");
+        fragmentTransaction.commit();
+    }
 
 
 //    private AppBarConfiguration mAppBarConfiguration;
