@@ -41,7 +41,8 @@ Scan&Doc  is an app designed to effortlessly capture text from physical document
 ### 2. Backlog Creation
 We monitorized our backlog creation using Trello. It can be found [here](https://trello.com/b/Y3UW7ffC/scandoc-app).
 
-![screenshot](trelloss.png)
+<img width="767" alt="trelloss" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/b8574b34-efbf-49ca-a964-dfcdf3fca9f9">
+
 
 
 ### 3. Features List
