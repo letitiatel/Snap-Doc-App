@@ -56,6 +56,11 @@ We monitorized our backlog creation using Trello. It can be found [here](https:/
 
 ![MDS DIAGRAMA](https://github.com/letitiatel/Snap-Doc-App/assets/116514235/d5b29f16-0cd9-4e9c-8b53-a4bfeb3a1169)
 
+
+### 5. Source control
+[Branches:](https://github.com/letitiatel/Snap-Doc-App/branches).
+
+
   
 
 
