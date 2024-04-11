@@ -10,23 +10,23 @@ Project developed for the 'Software Development Methods' course within the Facul
 Scan&Doc  is an app designed to effortlessly capture text from physical documents or images using your device's camera. With powerful OCR technology, it accurately extracts text and offers seamless conversion options, allowing you to save it as PDF, Word, or other popular formats. Edit, enhance, and manage your scanned documents with ease, and effortlessly share or sync them across devices. Whether you're a student, professional, or enthusiast, Scan&Doc simplifies text scanning and document management on the go.
 
 ### 1. User Stories
-1.As a student, I want to scan text from my textbooks so that I can save important notes as a PDF for future reference during exams.
+1.As a student, I want to use the device's camera to scan text from physical documents or images so that I can capture information for various purposes.
 
-2.As a journalist, I need to scan interview transcripts and save them as Word documents to easily edit and reference quotes for my articles.
+2.As a journalist, I want to convert scanned text into PDF format so that I can easily share and view the documents.
 
-3.As a business professional, I want to scan meeting notes and export them as PDFs to share with colleagues who couldn't attend the meeting.
+3.As a business professional, I want to edit the scanned text within the app before saving it to a document format.
 
-4.As a researcher, I need to scan research papers and save them as PDFs for citation purposes in my own studies.
+4.As a researcher, I want to manage my scanned documents by renaming, deleting, or sharing them.
 
-5.As a teacher, I want to scan handouts and worksheets and save them as editable Word documents to customize them for my lesson plans.
+5.As a teacher, I want to convert scanned text into different fonts so that I can customize the appearance of my documents.
 
-6.As a legal assistant, I need to scan legal documents and save them as PDFs for archival purposes and easy retrieval when needed.
+6.As a legal assistant, I want to choose a photo from the gallery or Drive to scan text so that I can work with existing images.
 
 7.As a traveler, I want to scan travel itineraries and save them as PDFs on my phone for offline access during my trip.
 
-8.As a writer, I need to scan handwritten notes and save them as Word documents for typing up later.
+8.As a writer, I want to convert scanned text into Word documents so that I can edit and format the text as needed.
 
-9.As a freelancer, I want to scan invoices and save them as PDFs to send to clients for payment processing.
+9.As a teacher, I want to customize the font style, size, and color of the scanned text to enhance readability.
 
 10.As a language learner, I need to scan foreign language texts and save them as PDFs for later translation and study.
 
@@ -36,7 +36,7 @@ Scan&Doc  is an app designed to effortlessly capture text from physical document
 
 13.As a real estate agent, I need to scan property listings and save them as PDFs to share with potential buyers or renters during property viewings.
 
-14.As a project manager, I want to scan project briefs and save them as Word documents to distribute to team members for clarity on project objectives and deliverables.
+14.As a project manager, I want to view the scanned documents within the app so that I can verify the scanned content.
 
 ### 2. Backlog Creation
 We monitorized our backlog creation using Trello. It can be found [here](https://trello.com/b/Y3UW7ffC/scandoc-app).
