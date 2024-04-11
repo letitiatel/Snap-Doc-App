@@ -3,18 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_transform"
-            android:icon="@drawable/ic_camera_black_24dp"
-            android:title="@string/menu_transform" />
-        <item
-            android:id="@+id/nav_reflow"
-            android:icon="@drawable/ic_gallery_black_24dp"
-            android:title="@string/menu_reflow" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_slideshow_black_24dp"
-            android:title="@string/menu_slideshow" />
-    </group>
+    <item android:id="@+id/bottom_menu_images"
+        android:title="Images"
+        android:icon="@drawable/ic_image_black"/>
+
+    <item android:id="@+id/bottom_menu_pdfs"
+        android:icon="@drawable/ic_image_black"
+        android:title="PDFs"/>
+
 </menu>
