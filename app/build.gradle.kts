@@ -42,9 +42,10 @@ dependencies {
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
     implementation(libs.compiler)
+    implementation("com.google.firebase:firebase-inappmessaging-display:17.2.0")
+    implementation("com.google.guava:guava:27.0.1-android")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-
 }
