@@ -42,8 +42,7 @@ dependencies {
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
     implementation(libs.compiler)
-    implementation("com.google.firebase:firebase-inappmessaging-display:17.2.0")
-    implementation("com.google.guava:guava:27.0.1-android")
+    implementation ("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
