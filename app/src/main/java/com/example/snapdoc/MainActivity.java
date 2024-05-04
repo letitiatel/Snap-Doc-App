@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     loadPdfsFragment();
                 }
 
-                return false;
+                return true;
             }
         });
     }
