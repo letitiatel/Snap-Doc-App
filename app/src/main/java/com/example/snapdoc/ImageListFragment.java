@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.databinding.tool.util.L;
 import android.graphics.Bitmap;
+import android.graphics.ColorSpace;
 import android.graphics.ImageDecoder;
 import android.net.Uri;
 import android.os.Build;
@@ -21,8 +22,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Context;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,12 +35,12 @@ import android.view.ViewGroup;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
-import com.android.tools.build.jetifier.core.utils.Log;
 import com.example.snapdoc.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 
 
 public class ImageListFragment extends Fragment {
@@ -52,6 +56,10 @@ public class ImageListFragment extends Fragment {
     private Uri imageUri = null;
 
     private FloatingActionButton addImageFab;
+    private RecyclerView imagesRv;
+
+    private ArrayList<ModelImage> allImageArrayList;
+    private AdapterImage adapterImage;
 
     private Context mContext;
 
@@ -81,6 +89,9 @@ public class ImageListFragment extends Fragment {
         storagePermissions = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
         addImageFab = view.findViewById(R.id.addImageFab);
+        imagesRv = view.findViewById(R.id.imagesRv);
+
+        loadImages();
 
         addImageFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +99,46 @@ public class ImageListFragment extends Fragment {
                 showInputImageDialog();
             }
         });
+    }
+
+    private void loadImages(){
+        Log.d(TAG, "loadImages: ");
+
+        allImageArrayList = new ArrayList<>();
+        adapterImage = new AdapterImage(mContext, allImageArrayList);
+
+        //set adapter
+        imagesRv.setAdapter(adapterImage);
+
+        File folder = new File(mContext.getExternalFilesDir(null), Constants.IMAGES_FOLDER);
+
+        if(folder.exists()){
+            Log.d(TAG, "loadImages: Folder exists");
+
+            File[] files = folder.listFiles();
+
+            if (files != null){
+                Log.d(TAG, "loadImages: Folder exists and has images");
+
+                for (File file: files){
+                    Log.d(TAG, "loadImages: fileName: " + file.getName());
+
+                    Uri imageUri = Uri.fromFile(file);
+
+                    ModelImage modelImage = new ModelImage(imageUri);
+
+                    allImageArrayList.add(modelImage);
+                    adapterImage.notifyItemInserted(allImageArrayList.size());
+                }
+                
+            }
+            else{
+                Log.d(TAG, "loadImages: Folder exists but empty");
+            }
+        }
+        else{
+            Log.d(TAG, "loadImages: Folder doesn't exist");
+        }
     }
 
     private void saveImageToAppLevelDirectory(Uri imageUriToBeSaved) {
@@ -103,14 +154,17 @@ public class ImageListFragment extends Fragment {
                 bitmap = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), imageUriToBeSaved);
             }
 
+            //create folder for the saved image
             File directory = new File(mContext.getExternalFilesDir(null), Constants.IMAGES_FOLDER);
             directory.mkdirs();
 
+            // name + extension of the image
             long timestamp = System.currentTimeMillis();
             String fileName = timestamp + ".jpeg";
 
             File file = new File(mContext.getExternalFilesDir(null), "" + Constants.IMAGES_FOLDER + "/" + fileName);
 
+            // Save Image
             try {
                 FileOutputStream fos = new FileOutputStream(file);
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
@@ -209,6 +263,10 @@ public class ImageListFragment extends Fragment {
 
                         saveImageToAppLevelDirectory(imageUri);
 
+                        ModelImage modelImage = new ModelImage(imageUri);
+                        allImageArrayList.add(modelImage);
+                        adapterImage.notifyItemInserted(allImageArrayList.size());
+
                     } else {
                         Toast.makeText(mContext, "Cancelled...", Toast.LENGTH_SHORT).show();
                     }
@@ -246,6 +304,10 @@ private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerFo
                     //Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
 
                     saveImageToAppLevelDirectory(imageUri);
+
+                    ModelImage modelImage = new ModelImage(imageUri);
+                    allImageArrayList.add(modelImage);
+                    adapterImage.notifyItemInserted(allImageArrayList.size());
 
                 }
                 else{
