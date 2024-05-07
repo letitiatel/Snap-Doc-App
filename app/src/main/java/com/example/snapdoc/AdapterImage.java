@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -44,16 +46,29 @@ public class AdapterImage extends RecyclerView.Adapter<AdapterImage.HolderImage>
                 .placeholder(R.drawable.ic_image_black)
                 .into(holder.imageIv);
 
-       holder.itemView.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               Intent intent = new Intent(context, ImageViewActivity.class);
-               intent.putExtra("imageUri", " "+imageUri);
-               context.startActivity(intent);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ImageViewActivity.class);
+                intent.putExtra("imageUri", " " + imageUri);
+                context.startActivity(intent);
 
-           }
-       });
+            }
+        });
+
+
+        //handle checkBox check  listener to select/unselect the image
+        holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+                modelImage.setChecked(isChecked);
+            }
+        });
+
+
     }
+
 
     @Override
     public int getItemCount() {
@@ -61,14 +76,16 @@ public class AdapterImage extends RecyclerView.Adapter<AdapterImage.HolderImage>
     }
 
 
-    class HolderImage extends RecyclerView.ViewHolder{
+    class HolderImage extends RecyclerView.ViewHolder {
 
         ImageView imageIv;
+        CheckBox checkBox;
 
-        public HolderImage(@NonNull View itemView){
+        public HolderImage(@NonNull View itemView) {
             super(itemView);
 
             imageIv = itemView.findViewById(R.id.imageIv);
+            checkBox = itemView.findViewById(R.id.checkBox);
         }
     }
 }
