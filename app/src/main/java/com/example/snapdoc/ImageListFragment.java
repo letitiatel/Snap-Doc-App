@@ -9,8 +9,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.databinding.tool.util.L;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.ColorSpace;
 import android.graphics.ImageDecoder;
+import android.graphics.Paint;
+import android.graphics.pdf.PdfDocument;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -221,12 +225,108 @@ public class ImageListFragment extends Fragment {
             @Override
             public void run(){
 
+               // here we will do background  task to convert all/selected images to pdf
                 Log.d(TAG, "run: BG work start:..");
-
+                //init separat arrayList of images to convert to pdf
                 ArrayList<ModelImage> imagesToPdfList = new ArrayList<>();
+                //check if all of selecte images are to be converted
                 if(convertAll){
+                    // convert all so our images list(imagesToPdfList) to be converted is same as all images list(allImageArrayList)
                     imagesToPdfList = allImageArrayList;
                 }
+                else{
+                    //convert selected images only, add selected images in imagesToPdfList
+                    for(int i = 0; i < allImageArrayList.size(); i++){
+
+                        if(allImageArrayList.get(i).isChecked()){
+
+                            imagesToPdfList.add(allImageArrayList.get(i));
+                        }
+                    }
+
+                }
+                Log.d(TAG, "run: imagesToPdfList size: "+ imagesToPdfList.size());
+
+                try{
+                   //1) create folder where we will save th pdf
+                    File root = new File(mContext.getExternalFilesDir(null), Constants.PDF_FOLDER);
+                    root.mkdirs();
+
+                    //2) name with extension of the image
+
+                    long timestamp = System.currentTimeMillis();
+                    String fileName = "PDF_" + timestamp + ".pdf";
+
+                    Log.d(TAG, "run: fileName:"+fileName);
+
+                    File file = new File(root, fileName);
+
+                    FileOutputStream fileOutputStream = new FileOutputStream(file);
+                    PdfDocument pdfDocument = new PdfDocument();
+
+                    for (int i = 0; i< imagesToPdfList.size();i++){
+                        Uri imageToAdInPdfUri = imagesToPdfList.get(i).getImageUri();
+
+                        try {
+                            //get bitmap
+                            Bitmap bitmap;
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                                //get bitmap using new API for Android P(28) and above
+                                bitmap = ImageDecoder.decodeBitmap(ImageDecoder.createSource(mContext.getContentResolver(), imageToAdInPdfUri));
+                            }
+                            else{
+                                //get bitmap in android devices below Android P (28)
+                                bitmap = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), imageToAdInPdfUri);
+                            }
+
+                            bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, false);
+                          // setup pdf  page info e.g page height, width, nmber.Since value of i will start from 0 so we will do i+1
+                            PdfDocument.PageInfo pageInfo = new PdfDocument.PageInfo.Builder(bitmap.getWidth(), bitmap.getHeight(),i+1).create();
+                           //create pdf page
+                            PdfDocument.Page page = pdfDocument.startPage(pageInfo);
+                         // for page color
+                            Paint paint = new Paint();
+                            paint.setColor(Color.WHITE);
+                             //setup canva with bitmap to add in pdf page
+                            Canvas canvas = page.getCanvas();
+                            canvas.drawPaint(paint);
+                            canvas.drawBitmap(bitmap, 0f, 0f, null);
+                            // finish the page
+                            pdfDocument.finishPage(page);
+
+                            bitmap.recycle();
+
+                        }
+                        catch (Exception e){
+                            Log.e(TAG, "run:", e);
+                        }
+                    }
+
+                    pdfDocument.writeTo(fileOutputStream);
+                    pdfDocument.close();
+
+
+                }
+                catch(Exception e){
+
+                    progressDialog.dismiss();
+
+                    Log.e(TAG, "run:", e);
+                }
+
+                //
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        Log.d(TAG, "run: Converted..");
+                        progressDialog.dismiss();
+                        Toast.makeText(mContext, "Convrted...", Toast.LENGTH_SHORT).show();
+
+                    }
+                });
+
+
 
             }
         });
