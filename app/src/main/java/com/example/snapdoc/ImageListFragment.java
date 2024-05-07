@@ -2,6 +2,7 @@ package com.example.snapdoc;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -27,6 +28,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -44,6 +47,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
 public class ImageListFragment extends Fragment {
@@ -63,6 +68,9 @@ public class ImageListFragment extends Fragment {
 
     private ArrayList<ModelImage> allImageArrayList;
     private AdapterImage adapterImage;
+
+    private ProgressDialog progressDialog;
+
 
     private Context mContext;
 
@@ -93,6 +101,12 @@ public class ImageListFragment extends Fragment {
 
         addImageFab = view.findViewById(R.id.addImageFab);
         imagesRv = view.findViewById(R.id.imagesRv);
+
+
+       //init setup progress dialog(e.g for showing progress while all/selected images are being converted to PDF)
+        progressDialog = new ProgressDialog(mContext);
+        progressDialog.setTitle("Please wait");
+        progressDialog.setCanceledOnTouchOutside(false);
 
         loadImages();
 
@@ -158,8 +172,67 @@ public class ImageListFragment extends Fragment {
 
                     .show();
         }
+        else if (itemId == R.id.images_item_pdf){
+            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+            builder.setTitle("Convert To Pdf")
+                    .setMessage("Convert All/Selected Images to Pdf")
+                    .setPositiveButton("Convert All", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            convertImagesTpPdf(true);
+
+                        }
+                    })
+                    .setNeutralButton("Convert Selected", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which){
+                            convertImagesTpPdf(false);
+
+
+                        }
+
+
+                    })
+                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+
+                        }
+                    })
+                    .show();
+
+        }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void  convertImagesTpPdf(boolean convertAll){
+        Log.d(TAG, "convertImagesTpPdf: convertAll: "+ convertAll);
+
+        progressDialog.setMessage("Converting to PDF...");
+        progressDialog.show();
+
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+        Handler handler = new Handler(Looper.getMainLooper());
+
+        executorService.execute(new Runnable() {
+            @Override
+            public void run(){
+
+                Log.d(TAG, "run: BG work start:..");
+
+                ArrayList<ModelImage> imagesToPdfList = new ArrayList<>();
+                if(convertAll){
+                    imagesToPdfList = allImageArrayList;
+                }
+
+            }
+        });
+
+
+
     }
 
 
