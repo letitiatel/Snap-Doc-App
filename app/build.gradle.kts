@@ -48,6 +48,7 @@ dependencies {
     implementation ("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.activity)
+    implementation(libs.glide)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

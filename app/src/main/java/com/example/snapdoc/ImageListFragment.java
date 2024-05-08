@@ -7,11 +7,9 @@ import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.databinding.tool.util.L;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.ColorSpace;
 import android.graphics.ImageDecoder;
 import android.graphics.Paint;
 import android.graphics.pdf.PdfDocument;
@@ -45,7 +43,8 @@ import android.view.ViewGroup;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
-import com.example.snapdoc.R;
+import com.example.snapdoc.adapters.AdapterImage;
+import com.example.snapdoc.models.ModelImage;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.File;
