@@ -57,7 +57,6 @@ public class PdfListFragment extends Fragment {
     private void loadPdfDocuments(){
 
         pdfArrayList = new ArrayList<>();
-//<<<<<<< HEAD
         adapterPdf = new AdapterPdf(mContext, pdfArrayList, new RvListenerPdf() {
             @Override
             public void onPdfClick(ModelPdf modelPdf, int position) {
@@ -73,7 +72,7 @@ public class PdfListFragment extends Fragment {
             }
         });
 
-        adapterPdf = new AdapterPdf(mContext, pdfArrayList);
+        //adapterPdf = new AdapterPdf(mContext, pdfArrayList);
         pdfRv.setAdapter(adapterPdf);
         File folder = new File(mContext.getExternalFilesDir(null),Constants.PDF_FOLDER);
 
