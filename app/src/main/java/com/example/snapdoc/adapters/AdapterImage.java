@@ -1,4 +1,4 @@
-package com.example.snapdoc;
+package com.example.snapdoc.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.snapdoc.activities.ImageViewActivity;
+import com.example.snapdoc.R;
+import com.example.snapdoc.models.ModelImage;
 
 import java.util.ArrayList;
 

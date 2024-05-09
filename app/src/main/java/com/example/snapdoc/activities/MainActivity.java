@@ -1,4 +1,4 @@
-package com.example.snapdoc;
+package com.example.snapdoc.activities;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -7,6 +7,9 @@ import android.view.MenuItem;
 import android.view.Menu;
 import android.widget.Button;
 
+import com.example.snapdoc.ImageListFragment;
+import com.example.snapdoc.PdfListFragment;
+import com.example.snapdoc.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.snackbar.Snackbar;

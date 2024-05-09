@@ -1,4 +1,4 @@
-package com.example.snapdoc;
+package com.example.snapdoc.activities;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
+import com.example.snapdoc.R;
 
 public class ImageViewActivity extends AppCompatActivity {
 
