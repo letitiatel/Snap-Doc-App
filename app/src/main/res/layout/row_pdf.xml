@@ -7,18 +7,30 @@
     app:contentPadding="10dp"
     android:layout_marginBottom="5dp"
     app:cardCornerRadius="5dp">
+<<<<<<< HEAD
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp">
 
+=======
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        
+>>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
         <ImageView
             android:id="@+id/thumbnailIv"
             android:layout_width="65dp"
             android:layout_height="80dp"
             android:src="@drawable/ic_pdf_black"
             android:adjustViewBounds="true"/>
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
         <RelativeLayout
             android:layout_toEndOf="@+id/thumbnailIv"
             android:layout_width="match_parent"
@@ -62,7 +74,11 @@
             android:padding="5dp"
             android:src="@drawable/ic_more_gray"
             android:background="@android:color/transparent"/>
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
         <TextView
             android:id="@+id/dateTv"
             android:layout_width="wrap_content"

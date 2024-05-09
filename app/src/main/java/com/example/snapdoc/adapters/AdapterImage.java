@@ -14,7 +14,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+<<<<<<< HEAD
 import com.example.snapdoc.activities.ImageViewActivity;
+=======
+import com.example.snapdoc.ImageViewActivity;
+>>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
 import com.example.snapdoc.R;
 import com.example.snapdoc.models.ModelImage;
 
