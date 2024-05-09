@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.snapdoc.R;
 import com.example.snapdoc.models.ModelPdfView;
-import com.technifysoft.imagestopdf.R;
+//import com.technifysoft.imagestopdf.R;
 
 import java.util.ArrayList;
 

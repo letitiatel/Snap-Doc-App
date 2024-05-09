@@ -20,10 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.snapdoc.MyApplication;
 import com.example.snapdoc.R;
-<<<<<<< HEAD
 import com.example.snapdoc.RvListenerPdf;
-=======
->>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
 import com.example.snapdoc.models.ModelPdf;
 
 import java.util.ArrayList;
@@ -34,7 +31,6 @@ public class AdapterPdf extends RecyclerView.Adapter<AdapterPdf.HolderPdf>{
 
     private Context context;
     private ArrayList<ModelPdf> pdfArrayList;
-<<<<<<< HEAD
     private RvListenerPdf rvListenerPdf;
 
     private static final String TAG = "ADAPTER_PDF_TAG";
@@ -43,13 +39,6 @@ public class AdapterPdf extends RecyclerView.Adapter<AdapterPdf.HolderPdf>{
         this.context = context;
         this.pdfArrayList = pdfArrayList;
         this.rvListenerPdf = rvListenerPdf;
-=======
-
-    private static final String TAG = "ADAPTER_PDF_TAG";
-    public AdapterPdf(Context context, ArrayList<ModelPdf> pdfArrayList) {
-        this.context = context;
-        this.pdfArrayList = pdfArrayList;
->>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
     }
 
     @NonNull
@@ -66,7 +55,6 @@ public class AdapterPdf extends RecyclerView.Adapter<AdapterPdf.HolderPdf>{
         String name = modelPdf.getFile().getName();
         long timestamp = modelPdf.getFile().lastModified();
         String formattedDate = MyApplication.formatTimestamp(timestamp);
-<<<<<<< HEAD
 
         loadFileSize(modelPdf, holder);
         loadThumbnailFromPdfFile(modelPdf, holder);
@@ -88,14 +76,6 @@ public class AdapterPdf extends RecyclerView.Adapter<AdapterPdf.HolderPdf>{
             }
         });
 
-=======
-        
-        loadFileSize(modelPdf, holder);
-        loadThumbnailFromPdfFile(modelPdf, holder);
-        
-        holder.nameTv.setText(name);
-        holder.dateTv.setText(formattedDate);
->>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
     }
 
     private void loadThumbnailFromPdfFile(ModelPdf modelPdf, HolderPdf holder) {
@@ -191,8 +171,4 @@ public class AdapterPdf extends RecyclerView.Adapter<AdapterPdf.HolderPdf>{
             dateTv = itemView.findViewById(R.id.dateTv);
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056

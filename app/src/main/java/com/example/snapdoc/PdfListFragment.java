@@ -1,10 +1,7 @@
 package com.example.snapdoc;
 
 import android.content.Context;
-<<<<<<< HEAD
 import android.content.Intent;
-=======
->>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -18,10 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-<<<<<<< HEAD
 import com.example.snapdoc.activities.PdfViewActivity;
-=======
->>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
 import com.example.snapdoc.adapters.AdapterPdf;
 import com.example.snapdoc.models.ModelPdf;
 
@@ -63,7 +57,7 @@ public class PdfListFragment extends Fragment {
     private void loadPdfDocuments(){
 
         pdfArrayList = new ArrayList<>();
-<<<<<<< HEAD
+//<<<<<<< HEAD
         adapterPdf = new AdapterPdf(mContext, pdfArrayList, new RvListenerPdf() {
             @Override
             public void onPdfClick(ModelPdf modelPdf, int position) {
@@ -78,9 +72,8 @@ public class PdfListFragment extends Fragment {
 
             }
         });
-=======
+
         adapterPdf = new AdapterPdf(mContext, pdfArrayList);
->>>>>>> 05632a61443216cca08eee49d6d6bd87efd43056
         pdfRv.setAdapter(adapterPdf);
         File folder = new File(mContext.getExternalFilesDir(null),Constants.PDF_FOLDER);
 
