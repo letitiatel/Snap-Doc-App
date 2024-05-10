@@ -1,4 +1,4 @@
-package com.example.snapdoc;
+package com.example.snapdoc.models;
 
 import android.app.Application;
 import android.text.format.DateFormat;
