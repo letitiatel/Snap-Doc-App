@@ -1,66 +1,74 @@
 [
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/content_main.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/content_main.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\item_transform.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\item_transform.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/app_bar_main.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/app_bar_main.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\row_pdf_view.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\row_pdf_view.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/activity_main.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/activity_main.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\row_image.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\row_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\content_main.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\fragment_reflow.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\fragment_reflow.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\fragment_slideshow.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\fragment_slideshow.xml"
+    },
+    {
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\nav_header_main.xml"
     },
     {
         "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/activity_image_view.xml",
         "source": "com.example.snapdoc.app-main-48:/layout/activity_image_view.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/fragment_settings.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/fragment_settings.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\activity_image_view.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\activity_image_view.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/row_pdf.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/row_pdf.xml"
-    },
-    {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/row_pdf_view.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/row_pdf_view.xml"
-    },
-    {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/fragment_pdf_list.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/fragment_pdf_list.xml"
-    },
-    {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/nav_header_main.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/nav_header_main.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\row_pdf.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\row_pdf.xml"
     },
     {
         "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/activity_pdf_view.xml",
         "source": "com.example.snapdoc.app-main-48:/layout/activity_pdf_view.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/fragment_transform.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/fragment_transform.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\activity_pdf_view.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\activity_pdf_view.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/fragment_reflow.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/fragment_reflow.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\fragment_pdf_list.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\fragment_pdf_list.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/item_transform.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/item_transform.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\app_bar_main.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/row_image.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/row_image.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/fragment_image_list.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/fragment_image_list.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\fragment_transform.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\fragment_transform.xml"
     },
     {
-        "merged": "com.example.snapdoc.app-mergeDebugResources-45:/layout/fragment_slideshow.xml",
-        "source": "com.example.snapdoc.app-main-48:/layout/fragment_slideshow.xml"
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-mergeDebugResources-45:\\layout\\fragment_image_list.xml",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.4\\com.example.snapdoc.app-main-48:\\layout\\fragment_image_list.xml"
     }
 ]
