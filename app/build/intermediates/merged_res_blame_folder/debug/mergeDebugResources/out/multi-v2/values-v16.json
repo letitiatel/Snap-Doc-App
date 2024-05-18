@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.snapdoc.app-mergeDebugResources-44:/values-v16/values-v16.xml",
+            "outputFile": "com.example.snapdoc.app-mergeDebugResources-49:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\2dac125375f1726cebc939918cb2e292\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\6d740a730caa4053bb92aad93d996103\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\a33912f984dea5fafc2dcc0d6d732dfe\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\83d648450371c81a66cae42452f1fd15\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

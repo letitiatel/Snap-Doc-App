@@ -49,6 +49,10 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.activity)
     implementation(libs.glide)
+    implementation(libs.camera.core)
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
+    implementation(libs.camera.camera2)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

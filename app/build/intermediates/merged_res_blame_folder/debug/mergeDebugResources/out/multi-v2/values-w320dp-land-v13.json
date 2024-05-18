@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.snapdoc.app-mergeDebugResources-44:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
+            "outputFile": "com.example.snapdoc.app-mergeDebugResources-49:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\81a604b61a9b9ac787b245df144c1b9a\\transformed\\material-1.11.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\9f5a37d64b3271bdd0181e5e2b1c88cb\\transformed\\material-1.11.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
