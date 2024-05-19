@@ -4,7 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-49:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\9f5a37d64b3271bdd0181e5e2b1c88cb\\transformed\\material-1.11.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\ed5370b7345ad81219e2c27d13c6909f\\transformed\\material-1.12.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

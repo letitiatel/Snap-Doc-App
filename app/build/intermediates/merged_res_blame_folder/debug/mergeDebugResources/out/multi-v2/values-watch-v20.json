@@ -4,7 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-49:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\83d648450371c81a66cae42452f1fd15\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\21bbe059023221fea9ac886c834cbb16\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

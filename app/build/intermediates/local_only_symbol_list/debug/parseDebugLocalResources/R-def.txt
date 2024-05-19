@@ -59,9 +59,11 @@ id nav_transform
 id nav_view
 id pageNumberTv
 id pagesTv
+id pdfNewNameEt
 id pdfRv
 id pdfViewRv
 id recyclerview_transform
+id renameBtn
 id sizeTv
 id textView
 id text_reflow
@@ -75,6 +77,7 @@ layout activity_main
 layout activity_pdf_view
 layout app_bar_main
 layout content_main
+layout dialog_rename
 layout fragment_image_list
 layout fragment_pdf_list
 layout fragment_reflow
@@ -115,3 +118,4 @@ style Theme.SnapDoc.NoActionBar
 style Theme.SnapDoc.PopupOverlay
 xml backup_rules
 xml data_extraction_rules
+xml file_paths

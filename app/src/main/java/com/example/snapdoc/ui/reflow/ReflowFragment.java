@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+//import com.example.snapdoc.databinding.FragmentReflowBinding;
 import com.example.snapdoc.databinding.FragmentReflowBinding;
+
 
 public class ReflowFragment extends Fragment {
 

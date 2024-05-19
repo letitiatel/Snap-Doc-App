@@ -50,19 +50,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
 public class ImageListFragment extends Fragment {
 
-    private static final int STORAGE_REQUEST_CODE = 100;
-    private static final int CAMERA_REQUEST_CODE = 101;
-
     private static final String TAG = "IMAGE_LIST_TAG";
-
-    private String[] cameraPermissions;
-    private String[] storagePermissions;
 
     private Uri imageUri = null;
 
@@ -99,8 +94,6 @@ public class ImageListFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        cameraPermissions = new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
-        storagePermissions = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
         addImageFab = view.findViewById(R.id.addImageFab);
         imagesRv = view.findViewById(R.id.imagesRv);
@@ -425,8 +418,8 @@ public class ImageListFragment extends Fragment {
     }
 
     private void saveImageToAppLevelDirectory(Uri imageUriToBeSaved) {
-        android.util.Log.d(TAG, "saveImageToAppLevelDirectory: ");
-        //Log.d(TAG, "saveImageToAppLevelDirectory: ");
+        //android.util.Log.d(TAG, "saveImageToAppLevelDirectory: ");
+        Log.d(TAG, "saveImageToAppLevelDirectory: ");
         try {
             Bitmap bitmap;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
@@ -453,29 +446,29 @@ public class ImageListFragment extends Fragment {
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
                 fos.flush();
                 fos.close();
-                android.util.Log.d(TAG, "saveImageToAppLevelDirectory: Image Saved");
-                //Log.d(TAG, "saveImageToAppLevelDirectory: Image Saved");
+                //android.util.Log.d(TAG, "saveImageToAppLevelDirectory: Image Saved");
+                Log.d(TAG, "saveImageToAppLevelDirectory: Image Saved");
                 Toast.makeText(mContext, "Image Saved", Toast.LENGTH_SHORT).show();
             } catch (Exception e) {
-                android.util.Log.d(TAG, "saveImageToAppLevelDirectory: ", e);
-                //Log.d(TAG, "saveImageToAppLevelDirectory: ", e);
-                android.util.Log.d(TAG, "saveImageToAppLevelDirectory: Failed to save image due to "+ e.getMessage());
-                //Log.d(TAG, "saveImageToAppLevelDirectory: Failed to save image due to "+ e.getMessage());
+                //android.util.Log.d(TAG, "saveImageToAppLevelDirectory: ", e);
+                Log.d(TAG, "saveImageToAppLevelDirectory: ", e);
+                //android.util.Log.d(TAG, "saveImageToAppLevelDirectory: Failed to save image due to "+ e.getMessage());
+                Log.d(TAG, "saveImageToAppLevelDirectory: Failed to save image due to "+ e.getMessage());
                 Toast.makeText(mContext, "Failed to save image due to " + e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         } catch (Exception e) {
-            android.util.Log.d(TAG, "saveImageToAppLevelDirectory: ", e);
-            //Log.d(TAG, "saveImageToAppLevelDirectory: ", e);
-            android.util.Log.d(TAG, "saveImageToAppLevelDirectory: Failed to prepare image due to "+ e.getMessage());
-            //Log.d(TAG, "saveImageToAppLevelDirectory: Failed to prepare image due to "+ e.getMessage());
+            //android.util.Log.d(TAG, "saveImageToAppLevelDirectory: ", e);
+            Log.d(TAG, "saveImageToAppLevelDirectory: ", e);
+            //android.util.Log.d(TAG, "saveImageToAppLevelDirectory: Failed to prepare image due to "+ e.getMessage());
+            Log.d(TAG, "saveImageToAppLevelDirectory: Failed to prepare image due to "+ e.getMessage());
             Toast.makeText(mContext, "Failed to prepare image due to " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 
 
     private void showInputImageDialog() {
-        android.util.Log.d(TAG, "showInputImageDialog: ");
-        //Log.d(TAG, "showInputImageDialog: ");
+        //android.util.Log.d(TAG, "showInputImageDialog: ");
+        Log.d(TAG, "showInputImageDialog: ");
 
         PopupMenu popupMenu = new PopupMenu(mContext, addImageFab);
 
@@ -492,25 +485,28 @@ public class ImageListFragment extends Fragment {
                 int itemId = menuItem.getItemId();
                 if (itemId == 1) {
 
-                    android.util.Log.d(TAG, "onMenuItemClick: Camera is clicked, check if camera permissions are granted or not");
-                    //Log.d(TAG, "onMenuItemClick: Camera is clicked, check if camera permissions are granted or not");
+                    //android.util.Log.d(TAG, "onMenuItemClick: Camera is clicked, check if camera permissions are granted or not");
+                    Log.d(TAG, "onMenuItemClick: Camera is clicked, check if camera permissions are granted or not");
 
                     if (checkCameraPermissions()) {
-
+                        //camera permissions already granted, we can launch camera intent
                         pickImageCamera();
                     } else {
-                        requestCameraPermissions();
+                        //requestCameraPermissions();
+                        //camera permissions are not granted, request the camera permissions
+                        requestCameraPermissions.launch(new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE});
+
                     }
                 } else if (itemId == 2) {
 
-                    android.util.Log.d(TAG, "onMenuItemClick: Gallery is clicked, check if storage permissions are granted or not");
-                    //Log.d(TAG, "onMenuItemClick: Gallery is clicked, check if storage permissions are granted or not");
+                    //android.util.Log.d(TAG, "onMenuItemClick: Gallery is clicked, check if storage permissions are granted or not");
+                    Log.d(TAG, "onMenuItemClick: Gallery is clicked, check if storage permissions are granted or not");
 
                     if (checkStoragePermission()) {
 
                         pickImageGallery();
                     } else {
-                        requestStoragePermission();
+                        requestStoragePermission.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
                     }
                 }
 
@@ -522,8 +518,8 @@ public class ImageListFragment extends Fragment {
 
     private void pickImageGallery() {
 
-        android.util.Log.d(TAG, "pickImageGallery: ");
-        //Log.d(TAG, "pickImageGallery: ");
+        //android.util.Log.d(TAG, "pickImageGallery: ");
+        Log.d(TAG, "pickImageGallery: ");
 
         Intent intent = new Intent(Intent.ACTION_PICK);
 
@@ -541,8 +537,8 @@ public class ImageListFragment extends Fragment {
                         Intent data = result.getData();
 
                         imageUri = data.getData();
-                        android.util.Log.d(TAG, "onActivityResult: Picked image gallery: " + imageUri);
-                        //Log.d(TAG, "onActivityResult: Picked image gallery: " + imageUri);
+                        //android.util.Log.d(TAG, "onActivityResult: Picked image gallery: " + imageUri);
+                        Log.d(TAG, "onActivityResult: Picked image gallery: " + imageUri);
 
                         saveImageToAppLevelDirectory(imageUri);
 
@@ -560,8 +556,8 @@ public class ImageListFragment extends Fragment {
 
 
     private void pickImageCamera() {
-        android.util.Log.d(TAG, "pickImageCamera: ");
-        //Log.d(TAG, "pickImageCamera: ");
+        //android.util.Log.d(TAG, "pickImageCamera: ");
+        Log.d(TAG, "pickImageCamera: ");
 
         ContentValues contentValues = new ContentValues();
         contentValues.put(MediaStore.Images.Media.TITLE, "TEMP IMAGE TITLE");
@@ -583,8 +579,8 @@ private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerFo
 
                 if(result.getResultCode() == Activity.RESULT_OK){
 
-                    android.util.Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
-                    //Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
+                    //android.util.Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
+                    Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
 
                     saveImageToAppLevelDirectory(imageUri);
 
@@ -602,91 +598,68 @@ private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerFo
 
 
     private boolean checkStoragePermission(){
-        android.util.Log.d(TAG, "checkStoragePermission: ");
-        //Log.d(TAG, "checkStoragePermission: ");
+        //android.util.Log.d(TAG, "checkStoragePermission: ");
+        Log.d(TAG, "checkStoragePermission: ");
         boolean result = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
 
         return result;
     }
 
-    private void requestStoragePermission(){
-        android.util.Log.d(TAG, "requestStoragePermission: ");
-        //Log.d(TAG, "requestStoragePermission: ");
-        requestPermissions(storagePermissions, STORAGE_REQUEST_CODE);
-    }
+    private ActivityResultLauncher<String> requestStoragePermission = registerForActivityResult(
+            new ActivityResultContracts.RequestPermission(),
+            new ActivityResultCallback<Boolean>() {
+                @Override
+                public void onActivityResult(Boolean isGranted) {
+                    Log.d(TAG, "onActivityResult: isGranted: " + isGranted);
+
+                    if (isGranted) {
+
+                        pickImageGallery();
+                    } else {
+
+                        Toast.makeText(mContext, "Permission denied...", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+    );
 
     private boolean checkCameraPermissions(){
-        android.util.Log.d(TAG, "checkCameraPermissions: ");
-        //Log.d(TAG, "checkCameraPermissions: ");
+        //android.util.Log.d(TAG, "checkCameraPermissions: ");
+        Log.d(TAG, "checkCameraPermissions: ");
         boolean cameraResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED;
         boolean storageResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
 
         return cameraResult && storageResult;
     }
 
-    private void requestCameraPermissions(){
-        android.util.Log.d(TAG, "requestCameraPermissions: ");
-        //Log.d(TAG, "requestCameraPermissions: ");
-        requestPermissions(cameraPermissions, CAMERA_REQUEST_CODE);
-    }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    private ActivityResultLauncher<String[]> requestCameraPermissions = registerForActivityResult(
+            new ActivityResultContracts.RequestMultiplePermissions(),
+            new ActivityResultCallback<Map<String, Boolean>>() {
+                @Override
+                public void onActivityResult(Map<String, Boolean> result) {
 
-        switch (requestCode){
-            case CAMERA_REQUEST_CODE:{
+                    Log.d(TAG, "onActivityResult: ");
+                    Log.d(TAG, "onActivityResult: "+result.toString());
 
-                if(grantResults.length > 0){
+                    boolean areAllGranted = true;
+                    for (Boolean isGranted: result.values()){
+                        Log.d(TAG, "onActivityResult: isGranted: "+isGranted);
+                        areAllGranted = areAllGranted && isGranted;
 
-                    boolean cameraAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
-                    boolean storageAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
+                    }
 
-                    if(cameraAccepted && storageAccepted){
-                        android.util.Log.d(TAG, "onRequestPermissionResult: both permissions (Camera & Gallery) are granted, we can launch camera intent");
-                        //Log.d(TAG, "onRequestPermissionsResult: both permissions (Camera & Gallery) are granted, we can launch camera intent");
+                    if(areAllGranted){
+                        Log.d(TAG, "onActivityResult: All Granted e.g. Camera&Storage...");
                         pickImageCamera();
                     }
                     else{
-                        android.util.Log.d(TAG, "onRequestPermissionResult: Camera & Storage permissions are required");
-                        //Log.d(TAG, "onRequestPermissionsResult: Camera & Storage permissions are required");
-                        Toast.makeText(mContext, "Camera & Storage permissions are required", Toast.LENGTH_SHORT).show();
+                        Log.d(TAG, "onActivityResult: Camera or Storage or both denied...");
+                        Toast.makeText(mContext, "Camera or Storage or both denied...", Toast.LENGTH_SHORT).show();
                     }
-                }
-                else{
-                    android.util.Log.d(TAG, "onRequestPermissionResult: Cancelled...");
-                    //Log.d(TAG, "onRequestPermissionsResult: Cancelled...");
-                    Toast.makeText(mContext, "Cancelled...", Toast.LENGTH_SHORT).show();
+
                 }
             }
-            break;
-            case STORAGE_REQUEST_CODE:{
+    );
 
-                if(grantResults.length > 0){
-
-                    boolean storageAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
-
-                    if (storageAccepted){
-
-                        android.util.Log.d(TAG, "onRequestPermissionResult: storage permission granted, we can launch gallery intent");
-                        //Log.d(TAG, "onRequestPermissionsResult: storage permission granted, we can launch gallery intent");
-                        pickImageGallery();
-                    }
-                    else{
-
-                        android.util.Log.d(TAG, "onRequestPermissionResult: storage permission denied, can't launch gallery intent");
-                        //Log.d(TAG, "onRequestPermissionsResult: storage permission denied, can't launch gallery intent");
-                        Toast.makeText(mContext, "Storage permission is required...", Toast.LENGTH_SHORT).show();
-                    }
-                }
-                else{
-                    android.util.Log.d(TAG, "onRequestPermissionResult: Cancelled");
-                    //Log.d(TAG, "onRequestPermissionsResult: Cancelled");
-                    Toast.makeText(mContext, "Cancelled...", Toast.LENGTH_SHORT).show();
-                }
-            }
-            break;
-        }
-
-    }
 }

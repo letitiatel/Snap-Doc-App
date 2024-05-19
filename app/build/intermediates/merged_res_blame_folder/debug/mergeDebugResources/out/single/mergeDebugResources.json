@@ -44,6 +44,10 @@
         "source": "com.example.snapdoc.app-main-53:/xml/backup_rules.xml"
     },
     {
+        "merged": "com.example.snapdoc.app-debug-51:/layout_dialog_rename.xml.flat",
+        "source": "com.example.snapdoc.app-main-53:/layout/dialog_rename.xml"
+    },
+    {
         "merged": "com.example.snapdoc.app-debug-51:/layout_item_transform.xml.flat",
         "source": "com.example.snapdoc.app-main-53:/layout/item_transform.xml"
     },
@@ -110,6 +114,10 @@
     {
         "merged": "com.example.snapdoc.app-debug-51:/drawable_ic_delete_white.xml.flat",
         "source": "com.example.snapdoc.app-main-53:/drawable/ic_delete_white.xml"
+    },
+    {
+        "merged": "com.example.snapdoc.app-debug-51:/xml_file_paths.xml.flat",
+        "source": "com.example.snapdoc.app-main-53:/xml/file_paths.xml"
     },
     {
         "merged": "com.example.snapdoc.app-debug-51:/layout_activity_pdf_view.xml.flat",

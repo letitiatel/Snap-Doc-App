@@ -4,17 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-49:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\6d740a730caa4053bb92aad93d996103\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-3\\83d648450371c81a66cae42452f1fd15\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\21bbe059023221fea9ac886c834cbb16\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -22,14 +12,6 @@
                         "endLines": "5",
                         "endColumns": "12",
                         "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
                     }
                 }
             ]
