@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.example.snapdoc.app-mergeDebugResources-50:/layout-w600dp-v13/activity_main.xml",
+        "source": "com.example.snapdoc.app-main-53:/layout-w600dp/activity_main.xml"
+    },
+    {
+        "merged": "com.example.snapdoc.app-mergeDebugResources-50:/layout-w600dp-v13/app_bar_main.xml",
+        "source": "com.example.snapdoc.app-main-53:/layout-w600dp/app_bar_main.xml"
+    },
+    {
+        "merged": "com.example.snapdoc.app-mergeDebugResources-50:/layout-w600dp-v13/fragment_transform.xml",
+        "source": "com.example.snapdoc.app-main-53:/layout-w600dp/fragment_transform.xml"
+    },
+    {
+        "merged": "com.example.snapdoc.app-mergeDebugResources-50:/layout-w600dp-v13/item_transform.xml",
+        "source": "com.example.snapdoc.app-main-53:/layout-w600dp/item_transform.xml"
+    },
+    {
+        "merged": "com.example.snapdoc.app-mergeDebugResources-50:/layout-w600dp-v13/content_main.xml",
+        "source": "com.example.snapdoc.app-main-53:/layout-w600dp/content_main.xml"
+    }
+]
