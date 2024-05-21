@@ -72,12 +72,24 @@ public class ImageListFragment extends Fragment {
 
     private Context mContext;
 
-    private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 1;
-
 
     public ImageListFragment() {
         // Required empty public constructor
     }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        mContext = context;
+        super.onAttach(context);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_image_list, container, false);
+    }
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -87,7 +99,7 @@ public class ImageListFragment extends Fragment {
         imagesRv = view.findViewById(R.id.imagesRv);
 
 
-       //init setup progr ess dialog(e.g for showing progress while all/selected images are being converted to PDF)
+        //init setup progress dialog(e.g for showing progress while all/selected images are being converted to PDF)
         progressDialog = new ProgressDialog(mContext);
         progressDialog.setTitle("Please wait");
         progressDialog.setCanceledOnTouchOutside(false);
@@ -148,7 +160,7 @@ public class ImageListFragment extends Fragment {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
-                          dialog.dismiss();
+                            dialog.dismiss();
 
                         }
 
@@ -205,7 +217,7 @@ public class ImageListFragment extends Fragment {
             @Override
             public void run(){
 
-               // here we will do background  task to convert all/selected images to pdf
+                // here we will do background  task to convert all/selected images to pdf
                 Log.d(TAG, "run: BG work start:..");
                 //init separat arrayList of images to convert to pdf
                 ArrayList<ModelImage> imagesToPdfList = new ArrayList<>();
@@ -228,7 +240,7 @@ public class ImageListFragment extends Fragment {
                 Log.d(TAG, "run: imagesToPdfList size: "+ imagesToPdfList.size());
 
                 try{
-                   //1) create folder where we will save th pdf
+                    //1) create folder where we will save th pdf
                     File root = new File(mContext.getExternalFilesDir(null), Constants.PDF_FOLDER);
                     root.mkdirs();
 
@@ -260,14 +272,14 @@ public class ImageListFragment extends Fragment {
                             }
 
                             bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, false);
-                          // setup pdf  page info e.g page height, width, nmber.Since value of i will start from 0 so we will do i+1
+                            // setup pdf  page info e.g page height, width, nmber.Since value of i will start from 0 so we will do i+1
                             PdfDocument.PageInfo pageInfo = new PdfDocument.PageInfo.Builder(bitmap.getWidth(), bitmap.getHeight(),i+1).create();
-                           //create pdf page
+                            //create pdf page
                             PdfDocument.Page page = pdfDocument.startPage(pageInfo);
-                         // for page color
+                            // for page color
                             Paint paint = new Paint();
                             paint.setColor(Color.WHITE);
-                             //setup canva with bitmap to add in pdf page
+                            //setup canva with bitmap to add in pdf page
                             Canvas canvas = page.getCanvas();
                             canvas.drawPaint(paint);
                             canvas.drawBitmap(bitmap, 0f, 0f, null);
@@ -394,7 +406,7 @@ public class ImageListFragment extends Fragment {
                     allImageArrayList.add(modelImage);
                     adapterImage.notifyItemInserted(allImageArrayList.size());
                 }
-                
+
             }
             else{
                 Log.d(TAG, "loadImages: Folder exists but empty");
@@ -490,12 +502,12 @@ public class ImageListFragment extends Fragment {
                     //android.util.Log.d(TAG, "onMenuItemClick: Gallery is clicked, check if storage permissions are granted or not");
                     Log.d(TAG, "onMenuItemClick: Gallery is clicked, check if storage permissions are granted or not");
 
-//                    if (checkStoragePermission()) {
+                    if (checkStoragePermission()) {
 
                         pickImageGallery();
-//                    } else {
-//                        requestStoragePermission.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-//                    }
+                    } else {
+                        requestStoragePermission.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+                    }
                 }
 
                 return true;
@@ -559,31 +571,30 @@ public class ImageListFragment extends Fragment {
     }
 
 
+    private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
 
-private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerForActivityResult(
-        new ActivityResultContracts.StartActivityForResult(),
-        new ActivityResultCallback<ActivityResult>() {
-            @Override
-            public void onActivityResult(ActivityResult result) {
+                    if(result.getResultCode() == Activity.RESULT_OK){
 
-                if(result.getResultCode() == Activity.RESULT_OK){
+                        //android.util.Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
+                        Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
 
-                    //android.util.Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
-                    Log.d(TAG, "onActivityResult: Picked image camera: "+imageUri);
+                        saveImageToAppLevelDirectory(imageUri);
 
-                    saveImageToAppLevelDirectory(imageUri);
+                        ModelImage modelImage = new ModelImage(imageUri, false);
+                        allImageArrayList.add(modelImage);
+                        adapterImage.notifyItemInserted(allImageArrayList.size());
 
-                    ModelImage modelImage = new ModelImage(imageUri, false);
-                    allImageArrayList.add(modelImage);
-                    adapterImage.notifyItemInserted(allImageArrayList.size());
-
+                    }
+                    else{
+                        Toast.makeText(mContext, "Cancelled...", Toast.LENGTH_SHORT).show();
+                    }
                 }
-                else{
-                    Toast.makeText(mContext, "Cancelled...", Toast.LENGTH_SHORT).show();
-                }
-        }
-    }
-);
+            }
+    );
 
 
     private boolean checkStoragePermission(){
@@ -616,9 +627,9 @@ private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerFo
         //android.util.Log.d(TAG, "checkCameraPermissions: ");
         Log.d(TAG, "checkCameraPermissions: ");
         boolean cameraResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED;
-       // boolean storageResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
+        boolean storageResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
 
-        return cameraResult ;
+        return cameraResult && storageResult;
     }
 
 
@@ -650,6 +661,4 @@ private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerFo
                 }
             }
     );
-
-
 }
