@@ -52,6 +52,10 @@
         "source": "com.example.snapdoc.app-main-53:/layout/row_pdf_view.xml"
     },
     {
+        "merged": "com.example.snapdoc.app-mergeDebugResources-50:/layout/dialog_progress.xml",
+        "source": "com.example.snapdoc.app-main-53:/layout/dialog_progress.xml"
+    },
+    {
         "merged": "com.example.snapdoc.app-mergeDebugResources-50:/layout/dialog_rename.xml",
         "source": "com.example.snapdoc.app-main-53:/layout/dialog_rename.xml"
     },
