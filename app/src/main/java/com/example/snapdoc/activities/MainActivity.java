@@ -5,8 +5,11 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Menu;
+import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.example.snapdoc.ImageListFragment;
 import com.example.snapdoc.PdfListFragment;
 import com.example.snapdoc.R;
@@ -39,6 +42,19 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
+        /** ImageView backgroundImageView = findViewById(R.id.backgroundImageView);
+
+        String imageUrl = "https://img.freepik.com/free-vector/abstract-purple-red-gradient-blur-background-vector_53876-174826.jpg?w=360&t=st=1716312313~exp=1716312913~hmac=1744502fd05bbe1f6cd1b5e5dddbf4b7d31043c9a7e0fe00408c0baa4daded2d"; // Replace with your image URL
+        Glide.with(this)
+                .load(imageUrl)
+                .into(backgroundImageView); **/
+
+        /**WebView webView = (WebView) findViewById(R.id.webview);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("file:///android_asset/index.html");**/
+
+
+
         loadImagesFragment();
         loadPdfsFragment();
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -56,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     private void loadPdfsFragment() {
         setTitle("PDF List");
