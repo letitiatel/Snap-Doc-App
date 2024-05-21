@@ -72,24 +72,12 @@ public class ImageListFragment extends Fragment {
 
     private Context mContext;
 
+    private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 1;
+
 
     public ImageListFragment() {
         // Required empty public constructor
     }
-
-    @Override
-    public void onAttach(@NonNull Context context) {
-        mContext = context;
-        super.onAttach(context);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_image_list, container, false);
-    }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -99,7 +87,7 @@ public class ImageListFragment extends Fragment {
         imagesRv = view.findViewById(R.id.imagesRv);
 
 
-       //init setup progress dialog(e.g for showing progress while all/selected images are being converted to PDF)
+       //init setup progr ess dialog(e.g for showing progress while all/selected images are being converted to PDF)
         progressDialog = new ProgressDialog(mContext);
         progressDialog.setTitle("Please wait");
         progressDialog.setCanceledOnTouchOutside(false);
@@ -502,12 +490,12 @@ public class ImageListFragment extends Fragment {
                     //android.util.Log.d(TAG, "onMenuItemClick: Gallery is clicked, check if storage permissions are granted or not");
                     Log.d(TAG, "onMenuItemClick: Gallery is clicked, check if storage permissions are granted or not");
 
-                    if (checkStoragePermission()) {
+//                    if (checkStoragePermission()) {
 
                         pickImageGallery();
-                    } else {
-                        requestStoragePermission.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-                    }
+//                    } else {
+//                        requestStoragePermission.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+//                    }
                 }
 
                 return true;
@@ -571,6 +559,7 @@ public class ImageListFragment extends Fragment {
     }
 
 
+
 private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerForActivityResult(
         new ActivityResultContracts.StartActivityForResult(),
         new ActivityResultCallback<ActivityResult>() {
@@ -627,9 +616,9 @@ private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerFo
         //android.util.Log.d(TAG, "checkCameraPermissions: ");
         Log.d(TAG, "checkCameraPermissions: ");
         boolean cameraResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED;
-        boolean storageResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
+       // boolean storageResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
 
-        return cameraResult && storageResult;
+        return cameraResult ;
     }
 
 
@@ -661,5 +650,6 @@ private ActivityResultLauncher<Intent> cameraActivityResultLauncher = registerFo
                 }
             }
     );
+
 
 }
