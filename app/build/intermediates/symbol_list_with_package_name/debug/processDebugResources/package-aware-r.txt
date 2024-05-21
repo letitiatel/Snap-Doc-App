@@ -1423,6 +1423,7 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color custom_background_color
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1471,6 +1472,10 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher1_background
+color ic_launcher2_background
+color icon1_background
+color icon_background
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3047,6 +3052,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3055,6 +3061,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable clep
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3090,6 +3097,7 @@ drawable ic_pdf_pink
 drawable ic_search_black_24
 drawable ic_settings_black_24dp
 drawable ic_slideshow_black_24dp
+drawable icon
 drawable indeterminate_static
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3167,6 +3175,7 @@ drawable side_nav_bar
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable verd
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3410,6 +3419,8 @@ id ignoreRequest
 id image
 id imageIv
 id imageView
+id imageView4
+id imageView5
 id image_view_item_transform
 id imagesRv
 id images_item_delete
@@ -3944,7 +3955,19 @@ menu menu_images
 menu navigation_drawer
 menu overflow
 mipmap ic_launcher
+mipmap ic_launcher1
+mipmap ic_launcher1_foreground
+mipmap ic_launcher1_round
+mipmap ic_launcher2
+mipmap ic_launcher2_foreground
+mipmap ic_launcher2_round
 mipmap ic_launcher_round
+mipmap icon
+mipmap icon1
+mipmap icon1_foreground
+mipmap icon1_round
+mipmap icon_foreground
+mipmap icon_round
 navigation mobile_navigation
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
