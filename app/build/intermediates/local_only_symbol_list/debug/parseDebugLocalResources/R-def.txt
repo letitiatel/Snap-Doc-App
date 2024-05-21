@@ -73,6 +73,8 @@ id pagesTv
 id pdfNewNameEt
 id pdfRv
 id pdfViewRv
+id progressBar
+id progressText
 id recyclerview_transform
 id renameBtn
 id sizeTv
@@ -88,6 +90,7 @@ layout activity_main
 layout activity_pdf_view
 layout app_bar_main
 layout content_main
+layout dialog_progress
 layout dialog_rename
 layout fragment_image_list
 layout fragment_pdf_list

@@ -12,17 +12,17 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/row_image"
         android:paddingBottom="80dp"
+        android:paddingTop="80dp"
         android:clipToPadding="false"
         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
         app:spanCount="2"/>
 
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="30sp"
-        android:text="Images" />
-        -->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Images" />-->
 
 
     <!-- Floating Action Button: to show dialog to pick image from Camera/Gallery -->

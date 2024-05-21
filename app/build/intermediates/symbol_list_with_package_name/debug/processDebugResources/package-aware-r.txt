@@ -3580,6 +3580,8 @@ id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
+id progressBar
+id progressText
 id progress_circular
 id progress_horizontal
 id radio
@@ -3875,6 +3877,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_progress
 layout dialog_rename
 layout fragment_image_list
 layout fragment_pdf_list
