@@ -35,15 +35,15 @@
 26-->D:\FACULTATE\Github\Snap&Doc\Snap-Doc-App\app\src\main\AndroidManifest.xml:21:9-33
 27
 28    <permission
-28-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\ae71f7479c700de1e087844028f42266\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+28-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\1239a13bcd2635ce7110e45e3b2145df\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
 29        android:name="com.example.snapdoc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-29-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\ae71f7479c700de1e087844028f42266\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+29-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\1239a13bcd2635ce7110e45e3b2145df\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
 30        android:protectionLevel="signature" />
-30-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\ae71f7479c700de1e087844028f42266\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+30-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\1239a13bcd2635ce7110e45e3b2145df\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 31
 32    <uses-permission android:name="com.example.snapdoc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-32-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\ae71f7479c700de1e087844028f42266\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
-32-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\ae71f7479c700de1e087844028f42266\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+32-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\1239a13bcd2635ce7110e45e3b2145df\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\1239a13bcd2635ce7110e45e3b2145df\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 33
 34    <application
 34-->D:\FACULTATE\Github\Snap&Doc\Snap-Doc-App\app\src\main\AndroidManifest.xml:23:5-75:19
@@ -52,7 +52,7 @@
 36        android:allowBackup="true"
 36-->D:\FACULTATE\Github\Snap&Doc\Snap-Doc-App\app\src\main\AndroidManifest.xml:24:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-37-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\ae71f7479c700de1e087844028f42266\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+37-->[androidx.core:core:1.13.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\1239a13bcd2635ce7110e45e3b2145df\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 38        android:dataExtractionRules="@xml/data_extraction_rules"
 38-->D:\FACULTATE\Github\Snap&Doc\Snap-Doc-App\app\src\main\AndroidManifest.xml:25:9-65
 39        android:debuggable="true"
@@ -139,97 +139,97 @@
 83        </provider>
 84
 85        <service
-85-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\5de45c979e2ef44cd56306d1b37ceaab\transformed\camera-camera2-1.3.3\AndroidManifest.xml:24:9-33:19
+85-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\e4074909eb332e6ce33c9e16a13b8530\transformed\camera-camera2-1.3.3\AndroidManifest.xml:24:9-33:19
 86            android:name="androidx.camera.core.impl.MetadataHolderService"
-86-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\5de45c979e2ef44cd56306d1b37ceaab\transformed\camera-camera2-1.3.3\AndroidManifest.xml:25:13-75
+86-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\e4074909eb332e6ce33c9e16a13b8530\transformed\camera-camera2-1.3.3\AndroidManifest.xml:25:13-75
 87            android:enabled="false"
-87-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\5de45c979e2ef44cd56306d1b37ceaab\transformed\camera-camera2-1.3.3\AndroidManifest.xml:26:13-36
+87-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\e4074909eb332e6ce33c9e16a13b8530\transformed\camera-camera2-1.3.3\AndroidManifest.xml:26:13-36
 88            android:exported="false" >
-88-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\5de45c979e2ef44cd56306d1b37ceaab\transformed\camera-camera2-1.3.3\AndroidManifest.xml:27:13-37
+88-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\e4074909eb332e6ce33c9e16a13b8530\transformed\camera-camera2-1.3.3\AndroidManifest.xml:27:13-37
 89            <meta-data
-89-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\5de45c979e2ef44cd56306d1b37ceaab\transformed\camera-camera2-1.3.3\AndroidManifest.xml:30:13-32:89
+89-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\e4074909eb332e6ce33c9e16a13b8530\transformed\camera-camera2-1.3.3\AndroidManifest.xml:30:13-32:89
 90                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-90-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\5de45c979e2ef44cd56306d1b37ceaab\transformed\camera-camera2-1.3.3\AndroidManifest.xml:31:17-103
+90-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\e4074909eb332e6ce33c9e16a13b8530\transformed\camera-camera2-1.3.3\AndroidManifest.xml:31:17-103
 91                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-91-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\5de45c979e2ef44cd56306d1b37ceaab\transformed\camera-camera2-1.3.3\AndroidManifest.xml:32:17-86
+91-->[androidx.camera:camera-camera2:1.3.3] C:\Users\Ana Maria\.gradle\caches\transforms-4\e4074909eb332e6ce33c9e16a13b8530\transformed\camera-camera2-1.3.3\AndroidManifest.xml:32:17-86
 92        </service>
 93
 94        <provider
-94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\61dacd246bcb0e09e5fcbd256f8ca64b\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c44831c8aa0bb6c4379f13782281fac8\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 95            android:name="androidx.startup.InitializationProvider"
-95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\61dacd246bcb0e09e5fcbd256f8ca64b\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c44831c8aa0bb6c4379f13782281fac8\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 96            android:authorities="com.example.snapdoc.androidx-startup"
-96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\61dacd246bcb0e09e5fcbd256f8ca64b\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c44831c8aa0bb6c4379f13782281fac8\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 97            android:exported="false" >
-97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\61dacd246bcb0e09e5fcbd256f8ca64b\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c44831c8aa0bb6c4379f13782281fac8\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 98            <meta-data
-98-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\61dacd246bcb0e09e5fcbd256f8ca64b\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+98-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c44831c8aa0bb6c4379f13782281fac8\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 99                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-99-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\61dacd246bcb0e09e5fcbd256f8ca64b\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+99-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c44831c8aa0bb6c4379f13782281fac8\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 100                android:value="androidx.startup" />
-100-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\61dacd246bcb0e09e5fcbd256f8ca64b\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+100-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c44831c8aa0bb6c4379f13782281fac8\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 101            <meta-data
-101-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\74673da30140da010eed448a3c924d8e\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+101-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c33be931423bb8e492d8ee532e1cfbfb\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
 102                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-102-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\74673da30140da010eed448a3c924d8e\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+102-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c33be931423bb8e492d8ee532e1cfbfb\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
 103                android:value="androidx.startup" />
-103-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\74673da30140da010eed448a3c924d8e\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+103-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\c33be931423bb8e492d8ee532e1cfbfb\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
 104            <meta-data
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 105                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
 106                android:value="androidx.startup" />
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
 107        </provider>
 108
 109        <uses-library
-109-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\cce4a80518015120bed3132ee051a842\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+109-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\4e28b7923bb651fa0f8eb56168f4fc37\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 110            android:name="androidx.window.extensions"
-110-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\cce4a80518015120bed3132ee051a842\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+110-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\4e28b7923bb651fa0f8eb56168f4fc37\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 111            android:required="false" />
-111-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\cce4a80518015120bed3132ee051a842\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+111-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\4e28b7923bb651fa0f8eb56168f4fc37\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 112        <uses-library
-112-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\cce4a80518015120bed3132ee051a842\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+112-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\4e28b7923bb651fa0f8eb56168f4fc37\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 113            android:name="androidx.window.sidecar"
-113-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\cce4a80518015120bed3132ee051a842\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+113-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\4e28b7923bb651fa0f8eb56168f4fc37\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 114            android:required="false" />
-114-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\cce4a80518015120bed3132ee051a842\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+114-->[androidx.window:window:1.0.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\4e28b7923bb651fa0f8eb56168f4fc37\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 115
 116        <receiver
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
 117            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
 118            android:directBootAware="false"
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
 119            android:enabled="true"
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
 120            android:exported="true"
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
 121            android:permission="android.permission.DUMP" >
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 122            <intent-filter>
-122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
 123                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 124            </intent-filter>
 125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
 126                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 127            </intent-filter>
 128            <intent-filter>
-128-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
 129                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 130            </intent-filter>
 131            <intent-filter>
-131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
 132                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\2678e79bd4108fe07bb3f0d0c446cc85\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Ana Maria\.gradle\caches\transforms-4\56ea3eef8928b6f5f4c19da2b1a67600\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
 133            </intent-filter>
 134        </receiver>
 135    </application>

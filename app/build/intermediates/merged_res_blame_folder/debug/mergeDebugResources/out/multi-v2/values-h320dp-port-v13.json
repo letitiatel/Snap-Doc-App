@@ -4,7 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-49:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ana Maria\\.gradle\\caches\\transforms-4\\5bf8ddee2364a1c98455de6969da2e17\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\Ana Maria\\.gradle\\caches\\transforms-4\\4c0651e33f5952f988aa75d3b48401d8\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

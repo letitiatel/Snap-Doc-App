@@ -1,4 +1,4 @@
-#Tue May 21 20:21:04 EEST 2024
+#Tue May 21 21:53:10 EEST 2024
 base.0=D\:\\FACULTATE\\Github\\Snap&Doc\\Snap-Doc-App\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\FACULTATE\\Github\\Snap&Doc\\Snap-Doc-App\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=D\:\\FACULTATE\\Github\\Snap&Doc\\Snap-Doc-App\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex

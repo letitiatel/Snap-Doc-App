@@ -4,7 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-49:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ana Maria\\.gradle\\caches\\transforms-4\\d7a32cf906c78f60ff8f62ae9ec01937\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\Ana Maria\\.gradle\\caches\\transforms-4\\2c5a68df93d87a3d0787b7a347626308\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
