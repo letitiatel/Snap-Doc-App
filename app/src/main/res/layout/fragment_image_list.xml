@@ -33,10 +33,6 @@
 
 
     <!-- Floating Action Button: to show dialog to pick image from Camera/Gallery -->
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addImageFab"
         android:layout_width="wrap_content"
