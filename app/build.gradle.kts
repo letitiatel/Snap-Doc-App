@@ -39,6 +39,15 @@ android {
 }
 
 dependencies {
+<<<<<<< Updated upstream
+=======
+
+    implementation(libs.firebase.ml.vision)
+
+    implementation("com.google.android.gms:play-services-vision:20.1.1")
+
+
+>>>>>>> Stashed changes
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
@@ -49,6 +58,9 @@ dependencies {
 
     // Glide library for image processing/loading
     implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation(libs.vision.common)
+    implementation(libs.play.services.mlkit.text.recognition.common)
+    implementation(libs.play.services.mlkit.text.recognition)
     annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
 
     // Testing libraries

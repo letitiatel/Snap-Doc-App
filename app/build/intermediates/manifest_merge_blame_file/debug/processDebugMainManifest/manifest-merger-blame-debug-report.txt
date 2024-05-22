@@ -11,6 +11,7 @@
 11    <uses-permission android:name="android.permission.CAMERA" />
 11-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:6:5-65
 11-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:6:22-62
+<<<<<<< Updated upstream
 12    <uses-permission
 12-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:7:5-8:38
 13        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
@@ -241,3 +242,365 @@
 139    </application>
 140
 141</manifest>
+=======
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:7:5-81
+12-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:8:5-80
+13-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:8:22-77
+14
+15    <!--
+16    <uses-permission android:name="android.permission.CAMERA" />
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+18
+19    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+20    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+21    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+22    -->
+23
+24    <uses-feature
+24-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:19:5-21:36
+25        android:name="android.hardware.camera"
+25-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:20:9-47
+26        android:required="false" />
+26-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:21:9-33
+27
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->[com.google.firebase:firebase-installations:16.3.1] C:\Users\alexa\.gradle\caches\transforms-4\8dc64953318918e3ec71e39aac603112\transformed\firebase-installations-16.3.1\AndroidManifest.xml:10:5-79
+28-->[com.google.firebase:firebase-installations:16.3.1] C:\Users\alexa\.gradle\caches\transforms-4\8dc64953318918e3ec71e39aac603112\transformed\firebase-installations-16.3.1\AndroidManifest.xml:10:22-76
+29    <uses-permission android:name="android.permission.INTERNET" />
+29-->[com.google.firebase:firebase-installations:16.3.1] C:\Users\alexa\.gradle\caches\transforms-4\8dc64953318918e3ec71e39aac603112\transformed\firebase-installations-16.3.1\AndroidManifest.xml:11:5-67
+29-->[com.google.firebase:firebase-installations:16.3.1] C:\Users\alexa\.gradle\caches\transforms-4\8dc64953318918e3ec71e39aac603112\transformed\firebase-installations-16.3.1\AndroidManifest.xml:11:22-64
+30
+31    <permission
+31-->[androidx.core:core:1.13.0] C:\Users\alexa\.gradle\caches\transforms-4\a6dc04b033354298e833dec795643dd1\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+32        android:name="com.example.snapdoc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.13.0] C:\Users\alexa\.gradle\caches\transforms-4\a6dc04b033354298e833dec795643dd1\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.13.0] C:\Users\alexa\.gradle\caches\transforms-4\a6dc04b033354298e833dec795643dd1\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="com.example.snapdoc.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.13.0] C:\Users\alexa\.gradle\caches\transforms-4\a6dc04b033354298e833dec795643dd1\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.13.0] C:\Users\alexa\.gradle\caches\transforms-4\a6dc04b033354298e833dec795643dd1\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+36
+37    <application
+37-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:23:5-80:19
+38        android:name="com.example.snapdoc.models.MyApplication"
+38-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:27:9-45
+39        android:allowBackup="true"
+39-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:24:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.13.0] C:\Users\alexa\.gradle\caches\transforms-4\a6dc04b033354298e833dec795643dd1\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+41        android:dataExtractionRules="@xml/data_extraction_rules"
+41-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:25:9-65
+42        android:debuggable="true"
+43        android:extractNativeLibs="false"
+44        android:fullBackupContent="@xml/backup_rules"
+44-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:26:9-54
+45        android:icon="@mipmap/ic_launcher"
+45-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:28:9-43
+46        android:label="@string/app_name"
+46-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:29:9-41
+47        android:roundIcon="@mipmap/ic_launcher_round"
+47-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:30:9-54
+48        android:supportsRtl="true"
+48-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:31:9-35
+49        android:testOnly="true"
+50        android:theme="@style/Theme.SnapDoc" >
+50-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:32:9-45
+51        <meta-data
+51-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:35:9-37:35
+52            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+52-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:36:13-70
+53            android:value="ocr" />
+53-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:37:13-32
+54
+55        <activity
+55-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:39:9-48:19
+56            android:name="com.example.snapdoc.activities.PdfViewActivity"
+56-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:40:13-55
+57            android:exported="true" >
+57-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:42:13-36
+58            <meta-data
+58-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:45:13-47:35
+59                android:name="android.app.lib_name"
+59-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:46:17-52
+60                android:value="" />
+60-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:47:17-33
+61        </activity>
+62        <activity
+62-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:49:9-55:20
+63            android:name="com.example.snapdoc.activities.ImageViewActivity"
+63-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:50:13-57
+64            android:exported="false" >
+64-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:51:13-37
+65            <meta-data
+65-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:45:13-47:35
+66                android:name="android.app.lib_name"
+66-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:46:17-52
+67                android:value="" />
+67-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:47:17-33
+68        </activity>
+69        <activity
+69-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:56:9-68:20
+70            android:name="com.example.snapdoc.activities.MainActivity"
+70-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:57:13-52
+71            android:exported="true"
+71-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:58:13-36
+72            android:label="@string/app_name"
+72-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:59:13-45
+73            android:resizeableActivity="true"
+73-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:60:13-46
+74            android:theme="@style/Theme.SnapDoc.NoActionBar" >
+74-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:61:13-61
+75            <intent-filter>
+75-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:63:13-67:29
+76                <action android:name="android.intent.action.MAIN" />
+76-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:64:17-69
+76-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:64:25-66
+77
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:66:17-77
+78-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:66:27-74
+79            </intent-filter>
+80        </activity>
+81
+82        <provider
+82-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:70:9-78:20
+83            android:name="androidx.core.content.FileProvider"
+83-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:71:13-62
+84            android:authorities="com.example.snapdoc.fileprovider"
+84-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:72:13-67
+85            android:exported="false"
+85-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:73:13-37
+86            android:grantUriPermissions="true" >
+86-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:74:13-47
+87            <meta-data
+87-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:75:13-77:54
+88                android:name="android.support.FILE_PROVIDER_PATHS"
+88-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:76:17-67
+89                android:resource="@xml/file_paths" />
+89-->C:\Users\alexa\Documents\GitHub\Snap-Doc-App\app\src\main\AndroidManifest.xml:77:17-51
+90        </provider>
+91
+92        <service
+92-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\alexa\.gradle\caches\transforms-4\0d025142b598dbf7df96ca4b748c9502\transformed\firebase-ml-vision-24.1.0\AndroidManifest.xml:9:9-15:19
+93            android:name="com.google.firebase.components.ComponentDiscoveryService"
+93-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\alexa\.gradle\caches\transforms-4\0d025142b598dbf7df96ca4b748c9502\transformed\firebase-ml-vision-24.1.0\AndroidManifest.xml:10:13-84
+94            android:directBootAware="true"
+94-->[com.google.firebase:firebase-common:19.3.0] C:\Users\alexa\.gradle\caches\transforms-4\78595bf200374b191410b90cc7e6fb18\transformed\firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+95            android:exported="false" >
+95-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\alexa\.gradle\caches\transforms-4\0d025142b598dbf7df96ca4b748c9502\transformed\firebase-ml-vision-24.1.0\AndroidManifest.xml:11:13-37
+96            <meta-data
+96-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\alexa\.gradle\caches\transforms-4\0d025142b598dbf7df96ca4b748c9502\transformed\firebase-ml-vision-24.1.0\AndroidManifest.xml:12:13-14:85
+97                android:name="com.google.firebase.components:com.google.firebase.ml.vision.VisionRegistrar"
+97-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\alexa\.gradle\caches\transforms-4\0d025142b598dbf7df96ca4b748c9502\transformed\firebase-ml-vision-24.1.0\AndroidManifest.xml:13:17-108
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-ml-vision:24.1.0] C:\Users\alexa\.gradle\caches\transforms-4\0d025142b598dbf7df96ca4b748c9502\transformed\firebase-ml-vision-24.1.0\AndroidManifest.xml:14:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-ml-common:22.1.2] C:\Users\alexa\.gradle\caches\transforms-4\05c1fa838c2c1fec40ebd0697d9eebae\transformed\firebase-ml-common-22.1.2\AndroidManifest.xml:11:13-13:85
+100                android:name="com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar"
+100-->[com.google.firebase:firebase-ml-common:22.1.2] C:\Users\alexa\.gradle\caches\transforms-4\05c1fa838c2c1fec40ebd0697d9eebae\transformed\firebase-ml-common-22.1.2\AndroidManifest.xml:12:17-117
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-ml-common:22.1.2] C:\Users\alexa\.gradle\caches\transforms-4\05c1fa838c2c1fec40ebd0697d9eebae\transformed\firebase-ml-common-22.1.2\AndroidManifest.xml:13:17-82
+102            <meta-data
+102-->[com.google.firebase:firebase-installations:16.3.1] C:\Users\alexa\.gradle\caches\transforms-4\8dc64953318918e3ec71e39aac603112\transformed\firebase-installations-16.3.1\AndroidManifest.xml:17:13-19:85
+103                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+103-->[com.google.firebase:firebase-installations:16.3.1] C:\Users\alexa\.gradle\caches\transforms-4\8dc64953318918e3ec71e39aac603112\transformed\firebase-installations-16.3.1\AndroidManifest.xml:18:17-127
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-installations:16.3.1] C:\Users\alexa\.gradle\caches\transforms-4\8dc64953318918e3ec71e39aac603112\transformed\firebase-installations-16.3.1\AndroidManifest.xml:19:17-82
+105        </service>
+106        <service
+106-->[androidx.camera:camera-camera2:1.3.3] C:\Users\alexa\.gradle\caches\transforms-4\c38c10a43f5710d815ef945365818227\transformed\camera-camera2-1.3.3\AndroidManifest.xml:24:9-33:19
+107            android:name="androidx.camera.core.impl.MetadataHolderService"
+107-->[androidx.camera:camera-camera2:1.3.3] C:\Users\alexa\.gradle\caches\transforms-4\c38c10a43f5710d815ef945365818227\transformed\camera-camera2-1.3.3\AndroidManifest.xml:25:13-75
+108            android:enabled="false"
+108-->[androidx.camera:camera-camera2:1.3.3] C:\Users\alexa\.gradle\caches\transforms-4\c38c10a43f5710d815ef945365818227\transformed\camera-camera2-1.3.3\AndroidManifest.xml:26:13-36
+109            android:exported="false" >
+109-->[androidx.camera:camera-camera2:1.3.3] C:\Users\alexa\.gradle\caches\transforms-4\c38c10a43f5710d815ef945365818227\transformed\camera-camera2-1.3.3\AndroidManifest.xml:27:13-37
+110            <meta-data
+110-->[androidx.camera:camera-camera2:1.3.3] C:\Users\alexa\.gradle\caches\transforms-4\c38c10a43f5710d815ef945365818227\transformed\camera-camera2-1.3.3\AndroidManifest.xml:30:13-32:89
+111                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+111-->[androidx.camera:camera-camera2:1.3.3] C:\Users\alexa\.gradle\caches\transforms-4\c38c10a43f5710d815ef945365818227\transformed\camera-camera2-1.3.3\AndroidManifest.xml:31:17-103
+112                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+112-->[androidx.camera:camera-camera2:1.3.3] C:\Users\alexa\.gradle\caches\transforms-4\c38c10a43f5710d815ef945365818227\transformed\camera-camera2-1.3.3\AndroidManifest.xml:32:17-86
+113        </service>
+114        <service
+114-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\alexa\.gradle\caches\transforms-4\a98f0a9ffea2bebb6193552694081571\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:9:9-15:19
+115            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+115-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\alexa\.gradle\caches\transforms-4\a98f0a9ffea2bebb6193552694081571\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:10:13-91
+116            android:directBootAware="true"
+116-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:17:13-43
+117            android:exported="false" >
+117-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\alexa\.gradle\caches\transforms-4\a98f0a9ffea2bebb6193552694081571\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:11:13-37
+118            <meta-data
+118-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\alexa\.gradle\caches\transforms-4\a98f0a9ffea2bebb6193552694081571\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:12:13-14:85
+119                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+119-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\alexa\.gradle\caches\transforms-4\a98f0a9ffea2bebb6193552694081571\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:13:17-114
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.0.0] C:\Users\alexa\.gradle\caches\transforms-4\a98f0a9ffea2bebb6193552694081571\transformed\play-services-mlkit-text-recognition-common-19.0.0\AndroidManifest.xml:14:17-82
+121            <meta-data
+121-->[com.google.mlkit:vision-common:17.3.0] C:\Users\alexa\.gradle\caches\transforms-4\0f818fbc1afb662efa168223d74aabb9\transformed\vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+122                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+122-->[com.google.mlkit:vision-common:17.3.0] C:\Users\alexa\.gradle\caches\transforms-4\0f818fbc1afb662efa168223d74aabb9\transformed\vision-common-17.3.0\AndroidManifest.xml:13:17-124
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.mlkit:vision-common:17.3.0] C:\Users\alexa\.gradle\caches\transforms-4\0f818fbc1afb662efa168223d74aabb9\transformed\vision-common-17.3.0\AndroidManifest.xml:14:17-82
+124            <meta-data
+124-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:20:13-22:85
+125                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+125-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:21:17-120
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:22:17-82
+127        </service>
+128
+129        <provider
+129-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:9:9-13:38
+130            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+130-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:10:13-78
+131            android:authorities="com.example.snapdoc.mlkitinitprovider"
+131-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:11:13-69
+132            android:exported="false"
+132-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:12:13-37
+133            android:initOrder="99" />
+133-->[com.google.mlkit:common:18.8.0] C:\Users\alexa\.gradle\caches\transforms-4\ab318fbc50c0ac5cd541b30c7fc97a6c\transformed\common-18.8.0\AndroidManifest.xml:13:13-35
+134
+135        <activity
+135-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\alexa\.gradle\caches\transforms-4\39fa129545118594aae3b3ab3d89a34d\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+136            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+136-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\alexa\.gradle\caches\transforms-4\39fa129545118594aae3b3ab3d89a34d\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+137            android:exported="false"
+137-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\alexa\.gradle\caches\transforms-4\39fa129545118594aae3b3ab3d89a34d\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+138-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\alexa\.gradle\caches\transforms-4\39fa129545118594aae3b3ab3d89a34d\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+139
+140        <provider
+140-->[com.google.firebase:firebase-common:19.3.0] C:\Users\alexa\.gradle\caches\transforms-4\78595bf200374b191410b90cc7e6fb18\transformed\firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+141            android:name="com.google.firebase.provider.FirebaseInitProvider"
+141-->[com.google.firebase:firebase-common:19.3.0] C:\Users\alexa\.gradle\caches\transforms-4\78595bf200374b191410b90cc7e6fb18\transformed\firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+142            android:authorities="com.example.snapdoc.firebaseinitprovider"
+142-->[com.google.firebase:firebase-common:19.3.0] C:\Users\alexa\.gradle\caches\transforms-4\78595bf200374b191410b90cc7e6fb18\transformed\firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+143            android:exported="false"
+143-->[com.google.firebase:firebase-common:19.3.0] C:\Users\alexa\.gradle\caches\transforms-4\78595bf200374b191410b90cc7e6fb18\transformed\firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+144            android:initOrder="100" />
+144-->[com.google.firebase:firebase-common:19.3.0] C:\Users\alexa\.gradle\caches\transforms-4\78595bf200374b191410b90cc7e6fb18\transformed\firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+145
+146        <meta-data
+146-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alexa\.gradle\caches\transforms-4\00a432f681ffa51ec8140dce5e4f1772\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+147            android:name="com.google.android.gms.version"
+147-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alexa\.gradle\caches\transforms-4\00a432f681ffa51ec8140dce5e4f1772\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+148            android:value="@integer/google_play_services_version" />
+148-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\alexa\.gradle\caches\transforms-4\00a432f681ffa51ec8140dce5e4f1772\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+149
+150        <provider
+150-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alexa\.gradle\caches\transforms-4\ae736818cdd034e5771d4cf8c7248307\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+151            android:name="androidx.startup.InitializationProvider"
+151-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alexa\.gradle\caches\transforms-4\ae736818cdd034e5771d4cf8c7248307\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+152            android:authorities="com.example.snapdoc.androidx-startup"
+152-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alexa\.gradle\caches\transforms-4\ae736818cdd034e5771d4cf8c7248307\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+153            android:exported="false" >
+153-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alexa\.gradle\caches\transforms-4\ae736818cdd034e5771d4cf8c7248307\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+154            <meta-data
+154-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alexa\.gradle\caches\transforms-4\ae736818cdd034e5771d4cf8c7248307\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+155                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+155-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alexa\.gradle\caches\transforms-4\ae736818cdd034e5771d4cf8c7248307\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+156                android:value="androidx.startup" />
+156-->[androidx.emoji2:emoji2:1.2.0] C:\Users\alexa\.gradle\caches\transforms-4\ae736818cdd034e5771d4cf8c7248307\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+157            <meta-data
+157-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alexa\.gradle\caches\transforms-4\3c2b4aa220bf498b7e098bff0a4155e9\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+158                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+158-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alexa\.gradle\caches\transforms-4\3c2b4aa220bf498b7e098bff0a4155e9\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+159                android:value="androidx.startup" />
+159-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alexa\.gradle\caches\transforms-4\3c2b4aa220bf498b7e098bff0a4155e9\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+160            <meta-data
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+161                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+162                android:value="androidx.startup" />
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+163        </provider>
+164
+165        <uses-library
+165-->[androidx.window:window:1.0.0] C:\Users\alexa\.gradle\caches\transforms-4\28a4c801c9de846f95deefe7c9157fd7\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+166            android:name="androidx.window.extensions"
+166-->[androidx.window:window:1.0.0] C:\Users\alexa\.gradle\caches\transforms-4\28a4c801c9de846f95deefe7c9157fd7\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+167            android:required="false" />
+167-->[androidx.window:window:1.0.0] C:\Users\alexa\.gradle\caches\transforms-4\28a4c801c9de846f95deefe7c9157fd7\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+168        <uses-library
+168-->[androidx.window:window:1.0.0] C:\Users\alexa\.gradle\caches\transforms-4\28a4c801c9de846f95deefe7c9157fd7\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+169            android:name="androidx.window.sidecar"
+169-->[androidx.window:window:1.0.0] C:\Users\alexa\.gradle\caches\transforms-4\28a4c801c9de846f95deefe7c9157fd7\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+170            android:required="false" />
+170-->[androidx.window:window:1.0.0] C:\Users\alexa\.gradle\caches\transforms-4\28a4c801c9de846f95deefe7c9157fd7\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+171
+172        <receiver
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+173            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+173-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+174            android:directBootAware="false"
+174-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+175            android:enabled="true"
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+176            android:exported="true"
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+177            android:permission="android.permission.DUMP" >
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+178            <intent-filter>
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+179                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+180            </intent-filter>
+181            <intent-filter>
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+182                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+182-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+183            </intent-filter>
+184            <intent-filter>
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+185                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+186            </intent-filter>
+187            <intent-filter>
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+188                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\alexa\.gradle\caches\transforms-4\7d107a89c4acf242387077c276c4e45a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+189            </intent-filter>
+190        </receiver>
+191
+192        <service
+192-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\alexa\.gradle\caches\transforms-4\55b5f6fbbc69b86e3b10a97d12467fa0\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+193            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+193-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\alexa\.gradle\caches\transforms-4\55b5f6fbbc69b86e3b10a97d12467fa0\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+194            android:exported="false" >
+194-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\alexa\.gradle\caches\transforms-4\55b5f6fbbc69b86e3b10a97d12467fa0\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+195            <meta-data
+195-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\alexa\.gradle\caches\transforms-4\55b5f6fbbc69b86e3b10a97d12467fa0\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+196                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+196-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\alexa\.gradle\caches\transforms-4\55b5f6fbbc69b86e3b10a97d12467fa0\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+197                android:value="cct" />
+197-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\alexa\.gradle\caches\transforms-4\55b5f6fbbc69b86e3b10a97d12467fa0\transformed\transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+198        </service>
+199        <service
+199-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\alexa\.gradle\caches\transforms-4\3a138fb090d64aeec60724472cf3662f\transformed\transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+200            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+200-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\alexa\.gradle\caches\transforms-4\3a138fb090d64aeec60724472cf3662f\transformed\transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+201            android:exported="false"
+201-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\alexa\.gradle\caches\transforms-4\3a138fb090d64aeec60724472cf3662f\transformed\transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+202            android:permission="android.permission.BIND_JOB_SERVICE" >
+202-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\alexa\.gradle\caches\transforms-4\3a138fb090d64aeec60724472cf3662f\transformed\transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+203        </service>
+204
+205        <receiver
+205-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\alexa\.gradle\caches\transforms-4\3a138fb090d64aeec60724472cf3662f\transformed\transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+206            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+206-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\alexa\.gradle\caches\transforms-4\3a138fb090d64aeec60724472cf3662f\transformed\transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+207            android:exported="false" />
+207-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\alexa\.gradle\caches\transforms-4\3a138fb090d64aeec60724472cf3662f\transformed\transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+208    </application>
+209
+210</manifest>
+>>>>>>> Stashed changes
