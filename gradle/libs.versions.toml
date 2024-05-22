@@ -1,5 +1,13 @@
 [versions]
+<<<<<<< Updated upstream
 agp = "8.4.0"
+=======
+
+
+agp = "8.3.1"
+firebaseMlVision = "24.1.0"
+
+>>>>>>> Stashed changes
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
@@ -18,6 +26,13 @@ cameraCore = "1.3.3"
 cameraLifecycle = "1.3.3"
 cameraView = "1.3.3"
 cameraCamera2 = "1.2.2"
+<<<<<<< Updated upstream
+=======
+visionCommon = "17.3.0"
+playServicesMlkitTextRecognitionCommon = "19.0.0"
+playServicesMlkitTextRecognition = "19.0.0"
+supportAnnotations = "28.0.0"
+>>>>>>> Stashed changes
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -38,6 +53,13 @@ camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "
 camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraLifecycle" }
 camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraView" }
 camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "cameraCamera2" }
+<<<<<<< Updated upstream
+=======
+vision-common = { group = "com.google.mlkit", name = "vision-common", version.ref = "visionCommon" }
+play-services-mlkit-text-recognition-common = { group = "com.google.android.gms", name = "play-services-mlkit-text-recognition-common", version.ref = "playServicesMlkitTextRecognitionCommon" }
+play-services-mlkit-text-recognition = { group = "com.google.android.gms", name = "play-services-mlkit-text-recognition", version.ref = "playServicesMlkitTextRecognition" }
+support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
+>>>>>>> Stashed changes
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
