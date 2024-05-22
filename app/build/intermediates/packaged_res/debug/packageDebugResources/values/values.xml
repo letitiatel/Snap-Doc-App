@@ -5,6 +5,7 @@
     <color name="ic_launcher1_background">#4D83C2</color>
     <color name="ic_launcher2_background">#4D83C2</color>
     <color name="icon1_background">#EA3F79</color>
+    <color name="icon2_background">#FFFFFF</color>
     <color name="icon_background">#EA3F79</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>

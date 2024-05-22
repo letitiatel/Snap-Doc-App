@@ -5,6 +5,7 @@ color custom_background_color
 color ic_launcher1_background
 color ic_launcher2_background
 color icon1_background
+color icon2_background
 color icon_background
 color purple_200
 color purple_500
@@ -126,6 +127,9 @@ mipmap icon
 mipmap icon1
 mipmap icon1_foreground
 mipmap icon1_round
+mipmap icon2
+mipmap icon2_foreground
+mipmap icon2_round
 mipmap icon_foreground
 mipmap icon_round
 navigation mobile_navigation

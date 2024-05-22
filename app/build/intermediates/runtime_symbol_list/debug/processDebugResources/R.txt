@@ -1491,6 +1491,7 @@ int color highlighted_text_material_light 0x7f05006b
 int color ic_launcher1_background 0x7f05006c
 int color ic_launcher2_background 0x7f05006d
 int color icon1_background 0x7f05006e
+int color icon2_background 0x7f05031c
 int color icon_background 0x7f05006f
 int color m3_appbar_overlay_color 0x7f050070
 int color m3_assist_chip_icon_tint_color 0x7f050071
@@ -4020,6 +4021,9 @@ int mipmap icon 0x7f0e0008
 int mipmap icon1 0x7f0e0009
 int mipmap icon1_foreground 0x7f0e000a
 int mipmap icon1_round 0x7f0e000b
+int mipmap icon2 0x7f0e000e
+int mipmap icon2_foreground 0x7f0e000f
+int mipmap icon2_round 0x7f0e0010
 int mipmap icon_foreground 0x7f0e000c
 int mipmap icon_round 0x7f0e000d
 int navigation mobile_navigation 0x7f0f0000
