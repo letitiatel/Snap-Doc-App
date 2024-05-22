@@ -26,6 +26,7 @@ public class AdapterImage extends RecyclerView.Adapter<AdapterImage.HolderImage>
     private ArrayList<ModelImage> imageArrayList;
 
     public AdapterImage(Context mContext, ArrayList<ModelImage> imageArrayList) {
+        this.context = mContext;
         this.imageArrayList = imageArrayList;
     }
 

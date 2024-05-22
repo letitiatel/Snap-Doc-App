@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10880317931",
+    "project_id": "snapdoc-94950",
+    "storage_bucket": "snapdoc-94950.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10880317931:android:f891c41668e660061881ae",
+        "android_client_info": {
+          "package_name": "com.example.snapdoc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj1SGi3AHyWtmMq-x0hIcMJ35sCJfjqng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

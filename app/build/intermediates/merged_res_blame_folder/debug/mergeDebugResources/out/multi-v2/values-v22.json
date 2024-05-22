@@ -1,10 +1,14 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.snapdoc.app-mergeDebugResources-49:/values-v22/values-v22.xml",
+            "outputFile": "com.example.snapdoc.app-mergeDebugResources-51:/values-v22/values-v22.xml",
             "map": [
                 {
+<<<<<<< Updated upstream
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\21bbe059023221fea9ac886c834cbb16\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
+=======
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\a61dfdabc22d321c81884c844e34b5a8\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

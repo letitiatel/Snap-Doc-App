@@ -13,3 +13,15 @@
 .externalNativeBuild
 .cxx
 local.properties
+.gradle/file-system.probe
+.gradle/file-system.probe
+.idea/workspace.xml
+app/build/intermediates/apk/debug/app-debug.apk
+app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+.gradle/file-system.probe
+.idea/workspace.xml
+app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources
+app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/example/snapdoc/ImageListFragment.class
+app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt

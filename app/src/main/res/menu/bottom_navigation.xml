@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <item
+        android:id="@+id/bottom_menu_text"
+        android:icon="@drawable/ic_text"
+        android:title="Text" />
+
     <item android:id="@+id/bottom_menu_images"
         android:title="Images"
         android:icon="@drawable/ic_image_black"/>

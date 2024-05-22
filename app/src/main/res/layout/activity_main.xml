@@ -9,7 +9,10 @@
 
 <<<<<<< Updated upstream
 =======
+<<<<<<< HEAD
 
+=======
+>>>>>>> b4b7b6ca9722444fe38245f2e2e3277bd598cfd2
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -20,20 +23,31 @@
         app:menu="@menu/menu_images"/>
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b4b7b6ca9722444fe38245f2e2e3277bd598cfd2
 >>>>>>> Stashed changes
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottomNavigationView"/>
+        android:layout_above="@+id/bottomNavigationView">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:menu="@menu/bottom_navigation"
-            android:layout_alignParentBottom="true" />
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:layout_width="208dp"-->
+<!--            android:layout_height="56dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Recognize Text"-->
+<!--            app:cornerRadius="5dp" />-->
+    </FrameLayout>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

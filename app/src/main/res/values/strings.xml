@@ -6,6 +6,8 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="text_recognition_failed">Text recognition failed. Please try again.</string>
+
 
     <string name="menu_transform">Transform</string>
     <string name="menu_reflow">Reflow</string>
