@@ -34,11 +34,8 @@ drawable ic_pdf_black
 drawable ic_pdf_pink
 drawable ic_settings_black_24dp
 drawable ic_slideshow_black_24dp
-<<<<<<< HEAD
 drawable ic_text
-=======
 drawable icon
->>>>>>> main
 drawable side_nav_bar
 drawable verd
 id activity_container
@@ -80,18 +77,10 @@ id pagesTv
 id pdfNewNameEt
 id pdfRv
 id pdfViewRv
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 id progressBar
 id progressText
 id recognisedTextBtn
 id recognizeTextButton
->>>>>>> Stashed changes
-=======
-id progressBar
-id progressText
->>>>>>> main
 id recyclerview_transform
 id renameBtn
 id sizeTv

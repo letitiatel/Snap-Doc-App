@@ -1429,7 +1429,6 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
-<<<<<<< HEAD
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -1441,9 +1440,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
-=======
 color custom_background_color
->>>>>>> main
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -3081,7 +3078,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-<<<<<<< HEAD
+drawable clep
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3101,9 +3098,6 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
-=======
-drawable clep
->>>>>>> main
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3142,11 +3136,8 @@ drawable ic_pdf_pink
 drawable ic_search_black_24
 drawable ic_settings_black_24dp
 drawable ic_slideshow_black_24dp
-<<<<<<< HEAD
 drawable ic_text
-=======
 drawable icon
->>>>>>> main
 drawable indeterminate_static
 drawable m3_avd_hide_password
 drawable m3_avd_show_password

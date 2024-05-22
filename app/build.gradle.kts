@@ -39,15 +39,12 @@ android {
 }
 
 dependencies {
-<<<<<<< Updated upstream
-=======
 
     implementation(libs.firebase.ml.vision)
 
     implementation("com.google.android.gms:play-services-vision:20.1.1")
 
 
->>>>>>> Stashed changes
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)

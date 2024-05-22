@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -142,11 +143,28 @@ public final class ActivityMainBinding implements ViewBinding {
   @Nullable
   public final NavigationView navView;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-w1240dp/</li>
+   *   <li>layout-w600dp/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Toolbar toolbar;
+
   private ActivityMainBinding(@NonNull View rootView, @NonNull View activityContainer,
       @Nullable AppBarMainBinding appBarMain, @Nullable BottomNavigationView bottomNavigationView,
       @Nullable DrawerLayout drawerLayout, @Nullable FrameLayout frameLayout,
       @Nullable ImageView imageView4, @Nullable ImageView imageView5,
-      @Nullable NavigationView navView) {
+      @Nullable NavigationView navView, @Nullable Toolbar toolbar) {
     this.rootView = rootView;
     this.activityContainer = activityContainer;
     this.appBarMain = appBarMain;
@@ -156,6 +174,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.imageView4 = imageView4;
     this.imageView5 = imageView5;
     this.navView = navView;
+    this.toolbar = toolbar;
   }
 
   @Override
@@ -200,7 +219,9 @@ public final class ActivityMainBinding implements ViewBinding {
 
     NavigationView navView = ViewBindings.findChildViewById(rootView, R.id.nav_view);
 
+    Toolbar toolbar = ViewBindings.findChildViewById(rootView, R.id.toolbar);
+
     return new ActivityMainBinding(rootView, activityContainer, binding_appBarMain,
-        bottomNavigationView, drawerLayout, frameLayout, imageView4, imageView5, navView);
+        bottomNavigationView, drawerLayout, frameLayout, imageView4, imageView5, navView, toolbar);
   }
 }
