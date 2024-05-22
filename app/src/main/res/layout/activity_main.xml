@@ -56,6 +56,7 @@
 
 
 
+<<<<<<< Updated upstream
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="250dp"
@@ -64,6 +65,16 @@
         android:layout_marginTop="330dp"
 
         app:srcCompat="@drawable/clep" />
+=======
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView5"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="262dp"-->
+<!--        android:layout_marginLeft="125dp"-->
+<!--        android:layout_marginTop="330dp"-->
+
+<!--        app:srcCompat="@drawable/clep" />-->
+>>>>>>> Stashed changes
 
 
 <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->

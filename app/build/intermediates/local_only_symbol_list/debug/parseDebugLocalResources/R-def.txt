@@ -57,7 +57,10 @@ id imageIq
 id imageIv
 id imageView
 id imageView4
+<<<<<<< Updated upstream
 id imageView5
+=======
+>>>>>>> Stashed changes
 id image_view_item_transform
 id imagesRv
 id images_item_delete
