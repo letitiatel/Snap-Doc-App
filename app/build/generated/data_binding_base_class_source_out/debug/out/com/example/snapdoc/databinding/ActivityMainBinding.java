@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -95,6 +96,40 @@ public final class ActivityMainBinding implements ViewBinding {
    * <p>
    * Present:
    * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-w1240dp/</li>
+   *   <li>layout-w600dp/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageView imageView4;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-w1240dp/</li>
+   *   <li>layout-w600dp/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageView imageView5;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
    *   <li>layout-w600dp/</li>
    * </ul>
    *
@@ -110,6 +145,7 @@ public final class ActivityMainBinding implements ViewBinding {
   private ActivityMainBinding(@NonNull View rootView, @NonNull View activityContainer,
       @Nullable AppBarMainBinding appBarMain, @Nullable BottomNavigationView bottomNavigationView,
       @Nullable DrawerLayout drawerLayout, @Nullable FrameLayout frameLayout,
+      @Nullable ImageView imageView4, @Nullable ImageView imageView5,
       @Nullable NavigationView navView) {
     this.rootView = rootView;
     this.activityContainer = activityContainer;
@@ -117,6 +153,8 @@ public final class ActivityMainBinding implements ViewBinding {
     this.bottomNavigationView = bottomNavigationView;
     this.drawerLayout = drawerLayout;
     this.frameLayout = frameLayout;
+    this.imageView4 = imageView4;
+    this.imageView5 = imageView5;
     this.navView = navView;
   }
 
@@ -156,9 +194,13 @@ public final class ActivityMainBinding implements ViewBinding {
 
     FrameLayout frameLayout = ViewBindings.findChildViewById(rootView, R.id.frameLayout);
 
+    ImageView imageView4 = ViewBindings.findChildViewById(rootView, R.id.imageView4);
+
+    ImageView imageView5 = ViewBindings.findChildViewById(rootView, R.id.imageView5);
+
     NavigationView navView = ViewBindings.findChildViewById(rootView, R.id.nav_view);
 
     return new ActivityMainBinding(rootView, activityContainer, binding_appBarMain,
-        bottomNavigationView, drawerLayout, frameLayout, navView);
+        bottomNavigationView, drawerLayout, frameLayout, imageView4, imageView5, navView);
   }
 }

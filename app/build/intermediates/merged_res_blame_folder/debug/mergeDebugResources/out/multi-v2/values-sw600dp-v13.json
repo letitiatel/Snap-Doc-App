@@ -4,6 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-51:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\21bbe059023221fea9ac886c834cbb16\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
@@ -19,6 +20,9 @@
 =======
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\e0a4f15f5a1a66566529f268d36515f0\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
 >>>>>>> Stashed changes
+=======
+                    "source": "C:\\Users\\letit\\.gradle\\caches\\transforms-4\\5bf8ddee2364a1c98455de6969da2e17\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+>>>>>>> main
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,11 +39,17 @@
                         "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
                         "endOffsets": "666,736,807,879,937,995,1104,1168,1224,1283,1346,1518"
                     }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
                 },
                 {
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\a61dfdabc22d321c81884c844e34b5a8\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+=======
+                },
+                {
+                    "source": "C:\\Users\\letit\\.gradle\\caches\\transforms-4\\d7a32cf906c78f60ff8f62ae9ec01937\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+>>>>>>> main
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -47,7 +57,10 @@
                         "endColumns": "68,68,69,73,75,58,70,67",
                         "endOffsets": "119,188,258,332,408,467,538,606"
                     }
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
                 }
             ]
         }

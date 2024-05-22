@@ -4,6 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-51:/values-da/values-da.xml",
             "map": [
                 {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\7f00e9ee6880fe1814ac3ba06a92dd8e\\transformed\\navigation-ui-2.7.7\\res\\values-da\\values-da.xml",
                     "from": {
@@ -47,6 +48,9 @@
 =======
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\00a432f681ffa51ec8140dce5e4f1772\\transformed\\play-services-basement-18.1.0\\res\\values-da\\values.xml",
 >>>>>>> Stashed changes
+=======
+                    "source": "C:\\Users\\letit\\.gradle\\caches\\transforms-4\\d7a32cf906c78f60ff8f62ae9ec01937\\transformed\\appcompat-1.6.1\\res\\values-da\\values-da.xml",
+>>>>>>> main
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -63,11 +67,32 @@
                     }
                 },
                 {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\ed5370b7345ad81219e2c27d13c6909f\\transformed\\material-1.12.0\\res\\values-da\\values-da.xml",
 =======
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\e0a4f15f5a1a66566529f268d36515f0\\transformed\\material-1.12.0\\res\\values-da\\values-da.xml",
 >>>>>>> Stashed changes
+=======
+                    "source": "C:\\Users\\letit\\.gradle\\caches\\transforms-4\\ae71f7479c700de1e087844028f42266\\transformed\\core-1.13.0\\res\\values-da\\values-da.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,350,448,555,664,782",
+                        "endColumns": "95,101,96,97,106,108,117,100",
+                        "endOffsets": "146,248,345,443,550,659,777,878"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,118",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3383,3479,3581,3678,3776,3883,3992,9915",
+                        "endColumns": "95,101,96,97,106,108,117,100",
+                        "endOffsets": "3474,3576,3673,3771,3878,3987,4105,10011"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\letit\\.gradle\\caches\\transforms-4\\5bf8ddee2364a1c98455de6969da2e17\\transformed\\material-1.12.0\\res\\values-da\\values-da.xml",
+>>>>>>> main
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -84,6 +109,7 @@
                         "endColumns": "12,77,75,77,96,79,99,148,77,58,63,85,72,59,86,63,61,61,67,64,53,117,57,60,55,74,125,85,76,90,83,79,140,77,79,121,85,77,55,50,65,67,73,70,74,71,77,69,72,103,83,76,87,88,73,72,84,48,77,65,79,82,61,63,62,68,107,102,100,98,59,54,79,79,77,76",
                         "endOffsets": "317,3047,3123,3201,3298,3378,4205,4354,4432,6693,6757,6843,6916,6976,7063,7127,7189,7251,7319,7384,7438,7556,7614,7675,7731,7806,7932,8018,8095,8186,8270,8350,8491,8569,8649,8771,8857,8935,8991,9042,9108,9176,9250,9321,9396,9468,9546,9616,9689,9793,9877,9954,10042,10131,10205,10278,10363,10412,10490,10556,10636,10719,10781,10845,10908,10977,11085,11188,11289,11388,11448,11503,11797,11957,12035,12112"
                     }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
                 },
@@ -123,6 +149,11 @@
                 },
                 {
                     "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\05e321e9bbda5e56717db9a7e718c531\\transformed\\navigation-ui-2.7.7\\res\\values-da\\values-da.xml",
+=======
+                },
+                {
+                    "source": "C:\\Users\\letit\\.gradle\\caches\\transforms-4\\cc18d79cde91a6ab1b3eb4fbb0a69a84\\transformed\\navigation-ui-2.7.7\\res\\values-da\\values-da.xml",
+>>>>>>> main
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -131,6 +162,7 @@
                         "endOffsets": "155,264"
                     },
                     "to": {
+<<<<<<< HEAD
                         "startLines": "129,130",
                         "startColumns": "4,4",
                         "startOffsets": "11508,11613",
@@ -138,6 +170,14 @@
                         "endOffsets": "11608,11717"
                     }
 >>>>>>> Stashed changes
+=======
+                        "startLines": "111,112",
+                        "startColumns": "4,4",
+                        "startOffsets": "9306,9411",
+                        "endColumns": "104,108",
+                        "endOffsets": "9406,9515"
+                    }
+>>>>>>> main
                 }
             ]
         }
