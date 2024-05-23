@@ -4,11 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-51:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\21bbe059023221fea9ac886c834cbb16\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
-=======
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\a61dfdabc22d321c81884c844e34b5a8\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
->>>>>>> Stashed changes
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\9eb7ee4a160c04270514e1cadffe8c43\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

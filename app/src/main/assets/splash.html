@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            overflow: hidden;
+        }
+        .phone {
+            position: relative;
+            width: 100px;
+            height: 200px;
+            border: 5px solid #8e44ad; /* Mov */
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scanner {
+            position: absolute;
+            width: 5px;
+            height: 200px;
+            background: linear-gradient(to bottom, rgba(142, 68, 173, 0) 0%, rgba(142, 68, 173, 0.5) 50%, rgba(142, 68, 173, 0) 100%);
+            animation: scan 2s infinite;
+        }
+        @keyframes scan {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+        .scan-line {
+            position: absolute;
+            width: 100vw;
+            height: 5px;
+            background: #8e44ad;
+            animation: scan-line 2s infinite;
+        }
+        @keyframes scan-line {
+            0% {
+                top: 50%;
+                opacity: 0;
+            }
+            50% {
+                top: 50%;
+                opacity: 1;
+            }
+            100% {
+                top: 50%;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="phone">
+    <div class="scanner"></div>
+</div>
+<div class="scan-line"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        console.log("Splash screen started");
+    });
+</script>
+</body>
+</html>

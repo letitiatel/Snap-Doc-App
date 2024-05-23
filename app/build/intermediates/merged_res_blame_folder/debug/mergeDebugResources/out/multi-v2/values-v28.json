@@ -4,8 +4,7 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-51:/values-v28/values-v28.xml",
             "map": [
                 {
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\21bbe059023221fea9ac886c834cbb16\\transformed\\appcompat-1.6.1\\res\\values-v28\\values-v28.xml",
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\9eb7ee4a160c04270514e1cadffe8c43\\transformed\\appcompat-1.6.1\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -24,10 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\ed5370b7345ad81219e2c27d13c6909f\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
-=======
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\e0a4f15f5a1a66566529f268d36515f0\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
->>>>>>> Stashed changes
+                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\2ad65152e1927c68f78e0c2488b0d2e4\\transformed\\material-1.12.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -43,25 +39,6 @@
                         "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,27",
                         "endColumns": "97,95,94,96,87,87,87,87,86,86,86,86,10",
                         "endOffsets": "148,244,339,436,524,612,700,788,875,962,1049,1136,1957"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\alexa\\.gradle\\caches\\transforms-4\\a61dfdabc22d321c81884c844e34b5a8\\transformed\\appcompat-1.6.1\\res\\values-v28\\values-v28.xml",
-                    "from": {
-                        "startLines": "2,3,4,8",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,397",
-                        "endLines": "2,3,7,11",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,392,584"
-                    },
-                    "to": {
-                        "startLines": "14,15,16,20",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "1141,1216,1303,1483",
-                        "endLines": "14,15,19,23",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "1211,1298,1478,1670"
                     }
                 }
             ]

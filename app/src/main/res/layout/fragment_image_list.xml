@@ -16,7 +16,6 @@
         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
         app:spanCount="2" />
 
-<<<<<<< Updated upstream
     <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,8 +26,7 @@
 
 
     <!-- Floating Action Button: to show dialog to pick image from Camera/Gallery -->
-=======
->>>>>>> Stashed changes
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addImageFab"
         android:layout_width="wrap_content"

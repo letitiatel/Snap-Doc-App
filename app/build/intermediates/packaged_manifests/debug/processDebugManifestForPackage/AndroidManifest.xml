@@ -10,16 +10,11 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
     <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion= "41" /> -->
-
-
     <!-- <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> -->
     <!-- <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> -->
     <!-- <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> -->
-
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
@@ -47,6 +42,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.SnapDoc" >
+        <activity
+            android:name="com.example.snapdoc.activities.SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <meta-data
             android:name="com.google.firebase.ml.vision.DEPENDENCIES"
             android:value="ocr" />
