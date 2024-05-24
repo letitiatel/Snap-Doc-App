@@ -19,14 +19,21 @@ import android.os.Bundle;
 import android.Manifest;//?
 
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.core.view.MenuCompat;
+import androidx.core.view.MenuProvider;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.Lifecycle;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
@@ -42,6 +49,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupMenu;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.snapdoc.adapters.AdapterImage;
 import com.example.snapdoc.models.ModelImage;
@@ -67,8 +75,8 @@ public class ImageListFragment extends Fragment {
     private ArrayList<ModelImage> allImageArrayList;
     private AdapterImage adapterImage;
 
-    private ProgressDialog progressDialog;
-
+    //private ProgressDialog progressDialog;
+    private AlertDialog progressDialog;
 
     private Context mContext;
 
@@ -81,6 +89,7 @@ public class ImageListFragment extends Fragment {
     public void onAttach(@NonNull Context context) {
         mContext = context;
         super.onAttach(context);
+
     }
 
     @Override
@@ -94,286 +103,193 @@ public class ImageListFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Initialize Toolbar
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
+        // Enable menu handling in the fragment
         addImageFab = view.findViewById(R.id.addImageFab);
         imagesRv = view.findViewById(R.id.imagesRv);
-
-
-        //init setup progress dialog(e.g for showing progress while all/selected images are being converted to PDF)
-        progressDialog = new ProgressDialog(mContext);
-        progressDialog.setTitle("Please wait");
-        progressDialog.setCanceledOnTouchOutside(false);
+        setHasOptionsMenu(true);
+        // Initialize Progress Dialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        LayoutInflater inflater = this.getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_progress, null);
+        builder.setView(dialogView);
+        builder.setCancelable(false);
+        progressDialog = builder.create();
 
         loadImages();
-
         addImageFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showInputImageDialog();
+                Log.d(TAG, "onClick: ceva");
             }
         });
+
+        // Add MenuProvider for handling menu
+        requireActivity().addMenuProvider(new MenuProvider() {
+            @Override
+            public void onCreateMenu(@NonNull Menu menu, @NonNull MenuInflater menuInflater) {
+                Log.d(TAG, "Inflating menu"); // Debugging
+                menuInflater.inflate(R.menu.menu_images, menu);
+            }
+
+            @Override
+            public boolean onMenuItemSelected(@NonNull MenuItem menuItem) {
+                int itemId = menuItem.getItemId();
+                Log.d(TAG, "Menu item selected: " + itemId); // Debugging
+
+                if (itemId == R.id.images_item_delete) {
+                    Log.d(TAG, "Delete menu item clicked"); // Debugging
+                    AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+                    builder.setTitle("Delete Images")
+                            .setMessage("Are you sure you want to delete All/Selected images?")
+                            .setPositiveButton("Delete All", (dialog, which) -> deleteImages(true))
+                            .setNeutralButton("Delete Selected", (dialog, which) -> deleteImages(false))
+                            .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
+                            .show();
+                    return true;
+                } else if (itemId == R.id.images_item_pdf) {
+                    Log.d(TAG, "Convert to PDF menu item clicked"); // Debugging
+                    AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+                    builder.setTitle("Convert To Pdf")
+                            .setMessage("Convert All/Selected Images to Pdf")
+                            .setPositiveButton("Convert All", (dialog, which) -> convertImagesToPdf(true))
+                            .setNeutralButton("Convert Selected", (dialog, which) -> convertImagesToPdf(false))
+                            .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
+                            .show();
+                    return true;
+                }
+
+                return false;
+            }
+        }, getViewLifecycleOwner(), Lifecycle.State.RESUMED);
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    private void convertImagesToPdf(boolean convertAll) {
+        Log.d(TAG, "convertImagesToPdf: convertAll: " + convertAll);
 
-        setHasOptionsMenu(true);
-    }
-
-    @Override
-    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
-
-        inflater.inflate(R.menu.menu_images, menu);
-        super.onCreateOptionsMenu(menu, inflater);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        int itemId = item.getItemId();
-
-        if (itemId == R.id.images_item_delete){
-
-            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-            builder.setTitle("Delete Images")
-                    .setMessage("Are you sure you want to delete All/Selected images?")
-                    .setPositiveButton("Delete All", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                            deleteImages(true);
-
-                        }
-                    })
-
-                    .setNeutralButton("Delete Selected", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                            deleteImages(false);
-
-                        }
-                    })
-
-                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                            dialog.dismiss();
-
-                        }
-
-                    })
-
-                    .show();
-        }
-        else if (itemId == R.id.images_item_pdf){
-            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-            builder.setTitle("Convert To Pdf")
-                    .setMessage("Convert All/Selected Images to Pdf")
-                    .setPositiveButton("Convert All", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            convertImagesTpPdf(true);
-
-                        }
-                    })
-                    .setNeutralButton("Convert Selected", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which){
-                            convertImagesTpPdf(false);
-
-
-                        }
-
-
-                    })
-                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-
-                        }
-                    })
-                    .show();
-
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void  convertImagesTpPdf(boolean convertAll){
-        Log.d(TAG, "convertImagesTpPdf: convertAll: "+ convertAll);
-
-        progressDialog.setMessage("Converting to PDF...");
         progressDialog.show();
 
         ExecutorService executorService = Executors.newSingleThreadExecutor();
-
         Handler handler = new Handler(Looper.getMainLooper());
 
         executorService.execute(new Runnable() {
             @Override
-            public void run(){
-
-                // here we will do background  task to convert all/selected images to pdf
+            public void run() {
                 Log.d(TAG, "run: BG work start:..");
-                //init separat arrayList of images to convert to pdf
                 ArrayList<ModelImage> imagesToPdfList = new ArrayList<>();
-                //check if all of selecte images are to be converted
-                if(convertAll){
-                    // convert all so our images list(imagesToPdfList) to be converted is same as all images list(allImageArrayList)
+                if (convertAll) {
                     imagesToPdfList = allImageArrayList;
-                }
-                else{
-                    //convert selected images only, add selected images in imagesToPdfList
-                    for(int i = 0; i < allImageArrayList.size(); i++){
-
-                        if(allImageArrayList.get(i).isChecked()){
-
-                            imagesToPdfList.add(allImageArrayList.get(i));
+                } else {
+                    for (ModelImage image : allImageArrayList) {
+                        if (image.isChecked()) {
+                            imagesToPdfList.add(image);
                         }
                     }
-
                 }
-                Log.d(TAG, "run: imagesToPdfList size: "+ imagesToPdfList.size());
+                Log.d(TAG, "run: imagesToPdfList size: " + imagesToPdfList.size());
 
-                try{
-                    //1) create folder where we will save th pdf
+                try {
                     File root = new File(mContext.getExternalFilesDir(null), Constants.PDF_FOLDER);
                     root.mkdirs();
-
-                    //2) name with extension of the image
-
                     long timestamp = System.currentTimeMillis();
                     String fileName = "PDF_" + timestamp + ".pdf";
-
-                    Log.d(TAG, "run: fileName:"+fileName);
-
+                    Log.d(TAG, "run: fileName:" + fileName);
                     File file = new File(root, fileName);
-
                     FileOutputStream fileOutputStream = new FileOutputStream(file);
                     PdfDocument pdfDocument = new PdfDocument();
 
-                    for (int i = 0; i< imagesToPdfList.size();i++){
+                    for (int i = 0; i < imagesToPdfList.size(); i++) {
                         Uri imageToAdInPdfUri = imagesToPdfList.get(i).getImageUri();
 
                         try {
-                            //get bitmap
                             Bitmap bitmap;
                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                                //get bitmap using new API for Android P(28) and above
                                 bitmap = ImageDecoder.decodeBitmap(ImageDecoder.createSource(mContext.getContentResolver(), imageToAdInPdfUri));
-                            }
-                            else{
-                                //get bitmap in android devices below Android P (28)
+                            } else {
                                 bitmap = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), imageToAdInPdfUri);
                             }
-
                             bitmap = bitmap.copy(Bitmap.Config.ARGB_8888, false);
-                            // setup pdf  page info e.g page height, width, nmber.Since value of i will start from 0 so we will do i+1
-                            PdfDocument.PageInfo pageInfo = new PdfDocument.PageInfo.Builder(bitmap.getWidth(), bitmap.getHeight(),i+1).create();
-                            //create pdf page
+                            PdfDocument.PageInfo pageInfo = new PdfDocument.PageInfo.Builder(bitmap.getWidth(), bitmap.getHeight(), i + 1).create();
                             PdfDocument.Page page = pdfDocument.startPage(pageInfo);
-                            // for page color
                             Paint paint = new Paint();
                             paint.setColor(Color.WHITE);
-                            //setup canva with bitmap to add in pdf page
                             Canvas canvas = page.getCanvas();
                             canvas.drawPaint(paint);
                             canvas.drawBitmap(bitmap, 0f, 0f, null);
-                            // finish the page
                             pdfDocument.finishPage(page);
-
                             bitmap.recycle();
-
-                        }
-                        catch (Exception e){
+                        } catch (Exception e) {
                             Log.e(TAG, "run:", e);
                         }
                     }
 
                     pdfDocument.writeTo(fileOutputStream);
                     pdfDocument.close();
-
-
-                }
-                catch(Exception e){
-
-                    progressDialog.dismiss();
-
+                } catch (Exception e) {
                     Log.e(TAG, "run:", e);
                 }
 
-                //
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-
                         Log.d(TAG, "run: Converted..");
                         progressDialog.dismiss();
-                        Toast.makeText(mContext, "Convrted...", Toast.LENGTH_SHORT).show();
-
+                        Toast.makeText(mContext, "Converted...", Toast.LENGTH_SHORT).show();
                     }
                 });
-
-
-
             }
         });
-
-
-
     }
 
-
-    private void deleteImages(boolean deleteAll){
-
+    private void deleteImages(boolean deleteAll) {
         ArrayList<ModelImage> imagesToDeleteList = new ArrayList<>();
-
-        if(deleteAll){
-
-            imagesToDeleteList = allImageArrayList;
-
-        }
-        else{
-
-            for (int i = 0; i < allImageArrayList.size(); i++){
-                if (allImageArrayList.get(i).isChecked()){
-                    imagesToDeleteList.add(allImageArrayList.get(i));
+        Log.d(TAG, "TESTdel: " );
+        if (deleteAll) {
+            Log.d(TAG, "TEST1: " );
+            imagesToDeleteList = new ArrayList<>(allImageArrayList);
+        } else {
+            Log.d(TAG, "TEST2: " );
+            for (ModelImage image : allImageArrayList) {
+                if (image.isChecked()) {
+                    imagesToDeleteList.add(image);
                 }
             }
-
         }
-
-        for (int i = 0; i < imagesToDeleteList.size(); i++){
-
+        Log.d(TAG, "TEST3: " );
+        for (ModelImage image : imagesToDeleteList) {
             try {
-                String pathOfImageToDelete = imagesToDeleteList.get(i).getImageUri().getPath();
-
+                Log.d(TAG, "TEST4: " );
+                Uri imageUriToDelete = image.getImageUri();
+                String pathOfImageToDelete = imageUriToDelete.getPath();
+                assert pathOfImageToDelete != null;
                 File file = new File(pathOfImageToDelete);
-                if (file.exists()){
-
+                if (file.exists()) {
                     boolean isDeleted = file.delete();
-
-                    Log.d(TAG, "deleteImages: isDeleted: "+isDeleted);
+                    Log.d(TAG, "deleteImages: isDeleted: " + isDeleted);
+                    if (isDeleted) {
+                        allImageArrayList.remove(image);
+                    } else {
+                        // Încearcă să ștergi folosind ContentResolver dacă metoda file.delete() eșuează
+                        int deletedRows = mContext.getContentResolver().delete(imageUriToDelete, null, null);
+                        if (deletedRows > 0) {
+                            Log.d(TAG, "deleteImages: Deleted using ContentResolver: " + imageUriToDelete);
+                            allImageArrayList.remove(image);
+                        }
+                    }
                 }
-
-
-            }
-            catch (Exception e){
-
+            } catch (Exception e) {
                 Log.d(TAG, "deleteImages: ", e);
-
             }
         }
 
+        adapterImage.notifyDataSetChanged();
         Toast.makeText(mContext, "Deleted", Toast.LENGTH_SHORT).show();
-
-        loadImages();
-
     }
+
 
 
 
@@ -612,13 +528,13 @@ public class ImageListFragment extends Fragment {
                 public void onActivityResult(Boolean isGranted) {
                     Log.d(TAG, "onActivityResult: isGranted: " + isGranted);
 
-                    if (isGranted) {
+//                    if (isGranted) {
 
                         pickImageGallery();
-                    } else {
-
-                        Toast.makeText(mContext, "Permission denied...", Toast.LENGTH_SHORT).show();
-                    }
+//                    } else {
+//
+//                        Toast.makeText(mContext, "Permission denied...", Toast.LENGTH_SHORT).show();
+//                    }
                 }
             }
     );
@@ -627,9 +543,9 @@ public class ImageListFragment extends Fragment {
         //android.util.Log.d(TAG, "checkCameraPermissions: ");
         Log.d(TAG, "checkCameraPermissions: ");
         boolean cameraResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED;
-        boolean storageResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
+        //boolean storageResult = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
 
-        return cameraResult && storageResult;
+        return cameraResult ;
     }
 
 

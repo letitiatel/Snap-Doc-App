@@ -58,6 +58,7 @@ dependencies {
     implementation(libs.vision.common)
     implementation(libs.play.services.mlkit.text.recognition.common)
     implementation(libs.play.services.mlkit.text.recognition)
+    implementation(libs.support.annotations)
     annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
 
     // Testing libraries

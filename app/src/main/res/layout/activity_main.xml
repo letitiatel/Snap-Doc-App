@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -21,7 +22,8 @@
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottomNavigationView">
+        android:layout_above="@+id/bottomNavigationView"
+        android:layout_below="@+id/toolbar">
 
 <!--        <com.google.android.material.button.MaterialButton-->
 <!--            android:layout_width="208dp"-->
