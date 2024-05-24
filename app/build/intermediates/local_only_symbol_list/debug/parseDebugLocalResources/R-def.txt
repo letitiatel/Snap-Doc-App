@@ -63,6 +63,7 @@ id image_view_item_transform
 id imagesRv
 id images_item_delete
 id images_item_pdf
+id largeImageView
 id main
 id mobile_navigation
 id moreBtn
@@ -99,6 +100,7 @@ layout activity_pdf_view
 layout activity_splash_screen
 layout app_bar_main
 layout content_main
+layout dialog_large_image
 layout dialog_progress
 layout dialog_rename
 layout fragment_image_list
