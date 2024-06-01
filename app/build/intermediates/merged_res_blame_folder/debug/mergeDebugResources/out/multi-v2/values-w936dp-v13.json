@@ -4,13 +4,13 @@
             "outputFile": "com.example.snapdoc.app-mergeDebugResources-51:/values-w936dp-v13/values-w936dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\FACULTATE\\Github\\Snap&Doc\\Snap-Doc-App\\app\\src\\main\\res\\values-w936dp\\dimens.xml",
+                    "source": "C:\\Users\\alexa\\Documents\\GitHub\\Snap-Doc-App\\app\\src\\main\\res\\values-w936dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endColumns": "59",
-                        "endOffsets": "71"
+                        "endOffsets": "72"
                     },
                     "to": {
                         "startLines": "2",

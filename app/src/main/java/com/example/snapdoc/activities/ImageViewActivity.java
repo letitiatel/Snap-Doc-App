@@ -44,13 +44,10 @@ public class ImageViewActivity extends AppCompatActivity {
         imageIv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showLargeImage(); // Implementează această metodă pentru a afișa imaginea într-o mărime mai mare
+                showLargeImage();
             }
         });
     }
-
-
-
 
 
     @Override
