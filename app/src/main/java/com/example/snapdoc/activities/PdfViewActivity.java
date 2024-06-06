@@ -9,22 +9,18 @@ import android.os.Looper;
 import android.os.ParcelFileDescriptor;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.snapdoc.R;
 import com.example.snapdoc.adapters.AdapterPdfView;
 import com.example.snapdoc.models.ModelPdfView;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 
 public class PdfViewActivity extends AppCompatActivity {
 
@@ -42,99 +38,76 @@ public class PdfViewActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         pdfViewRv = findViewById(R.id.pdfViewRv);
+        pdfViewRv.setLayoutManager(new LinearLayoutManager(this));
 
         pdfUri = getIntent().getStringExtra("pdfUri");
 
-        Log.d(TAG, "onCreate: pdfUri: "+pdfUri);
+        Log.d(TAG, "onCreate: pdfUri: " + pdfUri);
 
         loadPdfPages();
-
     }
 
-    private PdfRenderer.Page mCurrentPAge = null;
+    private PdfRenderer.Page mCurrentPage = null;
 
     private void loadPdfPages() {
-
         Log.d(TAG, "loadPdfPages: ");
 
         ArrayList<ModelPdfView> pdfViewArrayList = new ArrayList<>();
-
         AdapterPdfView adapterPdfView = new AdapterPdfView(this, pdfViewArrayList);
-
         pdfViewRv.setAdapter(adapterPdfView);
 
         File file = new File(Uri.parse(pdfUri).getPath());
 
-        try{
+        try {
             getSupportActionBar().setSubtitle(file.getName());
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             Log.e(TAG, "loadPdfPages: ", e);
         }
 
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+        Handler handler = new Handler(Looper.getMainLooper());
 
+        executorService.execute(() -> {
+            try {
+                ParcelFileDescriptor parcelFileDescriptor = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY);
+                PdfRenderer pdfRenderer = new PdfRenderer(parcelFileDescriptor);
 
+                int pageCount = pdfRenderer.getPageCount();
 
-    ExecutorService executorService = Executors.newSingleThreadExecutor();
-    Handler handler = new Handler(Looper.getMainLooper());
+                if (pageCount <= 0) {
+                    Log.d(TAG, "run: No pages in PDF file");
+                } else {
+                    Log.d(TAG, "run: Have pages in PDF file");
 
-    executorService.execute(new Runnable() {
-         @Override
-         public void run() {
+                    for (int i = 0; i < pageCount; i++) {
+                        if (mCurrentPage != null) {
+                            mCurrentPage.close();
+                        }
 
-                try {
+                        mCurrentPage = pdfRenderer.openPage(i);
+                        Bitmap bitmap = Bitmap.createBitmap(mCurrentPage.getWidth(), mCurrentPage.getHeight(), Bitmap.Config.ARGB_8888);
+                        mCurrentPage.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
 
-                 ParcelFileDescriptor parcelFileDescriptor = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY);
-
-                 PdfRenderer mPdfRenderer = new PdfRenderer(parcelFileDescriptor);
-
-                 int pageCount = mPdfRenderer.getPageCount();
-                 
-                 if (pageCount <= 0){
-                     Log.d(TAG, "run: No pages in PDF file");
-                 }
-                 else{
-                     Log.d(TAG, "run: Have pages in PDF file");
-
-                     for (int i=0; i<pageCount; i++){
-                         if(mCurrentPAge != null){
-                             mCurrentPAge.close();
-                         }
-
-                         mCurrentPAge = mPdfRenderer.openPage(i);
-
-                         Bitmap bitmap = Bitmap.createBitmap(mCurrentPAge.getWidth(), mCurrentPAge.getHeight(), Bitmap.Config.ARGB_8888);
-
-
-
-                         mCurrentPAge.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
-
-                         pdfViewArrayList.add(new ModelPdfView(Uri.parse(pdfUri), (i+1), pageCount, bitmap));
-                     }
-                 }
-                }
-                catch (Exception e) {
-
-                 Log.e(TAG, "run:", e);
-              }
-
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.d(TAG, "run: UI thread...");
-                        adapterPdfView.notifyDataSetChanged();
+                        pdfViewArrayList.add(new ModelPdfView(Uri.parse(pdfUri), (i + 1), pageCount, bitmap));
                     }
-                });
-           }
-    });
 
+                    pdfRenderer.close();
+                    parcelFileDescriptor.close();
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "run:", e);
+            }
+
+            handler.post(() -> {
+                Log.d(TAG, "run: UI thread...");
+                adapterPdfView.notifyDataSetChanged();
+            });
+        });
     }
 
     @Override
-    public boolean onSupportNavigateUp(){
-
+    public boolean onSupportNavigateUp() {
         onBackPressed();
         return super.onSupportNavigateUp();
     }
-
 }

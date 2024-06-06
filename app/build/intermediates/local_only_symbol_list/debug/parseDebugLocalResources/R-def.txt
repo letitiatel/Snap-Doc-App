@@ -113,6 +113,7 @@ layout fragment_transform
 layout item_transform
 layout nav_header_main
 layout row_image
+layout row_image_view
 layout row_pdf
 layout row_pdf_view
 menu bottom_navigation
@@ -144,6 +145,8 @@ string action_settings
 string app_name
 string fab_content_description
 string hello_blank_fragment
+string image
+string image_large
 string image_view_item_transform_content_description
 string lorem_ipsum
 string lorem_ipsum_title

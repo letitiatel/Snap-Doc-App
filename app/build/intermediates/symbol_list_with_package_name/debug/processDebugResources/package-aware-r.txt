@@ -4004,6 +4004,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout row_image
+layout row_image_view
 layout row_pdf
 layout row_pdf_view
 layout select_dialog_item_material
@@ -4112,6 +4113,8 @@ string fab_transformation_sheet_behavior
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string image
+string image_large
 string image_view_item_transform_content_description
 string item_view_role_description
 string lorem_ipsum

@@ -5,20 +5,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.snapdoc.R;
-import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class RowPdfViewBinding implements ViewBinding {
   @NonNull
-  private final MaterialCardView rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final ImageView imageIv;
@@ -26,7 +26,7 @@ public final class RowPdfViewBinding implements ViewBinding {
   @NonNull
   public final TextView pageNumberTv;
 
-  private RowPdfViewBinding(@NonNull MaterialCardView rootView, @NonNull ImageView imageIv,
+  private RowPdfViewBinding(@NonNull RelativeLayout rootView, @NonNull ImageView imageIv,
       @NonNull TextView pageNumberTv) {
     this.rootView = rootView;
     this.imageIv = imageIv;
@@ -35,7 +35,7 @@ public final class RowPdfViewBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public MaterialCardView getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -72,7 +72,7 @@ public final class RowPdfViewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RowPdfViewBinding((MaterialCardView) rootView, imageIv, pageNumberTv);
+      return new RowPdfViewBinding((RelativeLayout) rootView, imageIv, pageNumberTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

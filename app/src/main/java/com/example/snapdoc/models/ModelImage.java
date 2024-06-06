@@ -5,7 +5,6 @@ import android.net.Uri;
 public class ModelImage {
 
     Uri imageUri;
-    //checkbox to see if image was selected or not
     boolean checked;
 
     public ModelImage(Uri imageUri, boolean checked) {

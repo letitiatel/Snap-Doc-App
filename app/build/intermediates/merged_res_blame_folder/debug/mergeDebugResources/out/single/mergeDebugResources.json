@@ -384,6 +384,10 @@
         "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-main-55:\\mipmap-xhdpi\\ic_launcher1_foreground.webp"
     },
     {
+        "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-debug-53:\\layout_row_image_view.xml.flat",
+        "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-main-55:\\layout\\row_image_view.xml"
+    },
+    {
         "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-debug-53:\\mipmap-xhdpi_icon_foreground.webp.flat",
         "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-main-55:\\mipmap-xhdpi\\icon_foreground.webp"
     },
@@ -490,10 +494,6 @@
     {
         "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-debug-53:\\layout_activity_splash_screen.xml.flat",
         "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-main-55:\\layout\\activity_splash_screen.xml"
-    },
-    {
-        "merged": "com.example.snapdoc.app-debug-53:/layout_activity_pdf_view.xml.flat",
-        "source": "com.example.snapdoc.app-main-55:/layout/activity_pdf_view.xml"
     },
     {
         "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-debug-53:\\xml_backup_rules.xml.flat",
@@ -614,6 +614,10 @@
     {
         "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-debug-53:\\mipmap-mdpi_icon_foreground.webp.flat",
         "source": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-main-55:\\mipmap-mdpi\\icon_foreground.webp"
+    },
+    {
+        "merged": "com.example.snapdoc.app-debug-53:/layout_activity_image_view.xml.flat",
+        "source": "com.example.snapdoc.app-main-55:/layout/activity_image_view.xml"
     },
     {
         "merged": "C:\\Users\\alexa\\.gradle\\daemon\\8.7\\com.example.snapdoc.app-debug-53:\\mipmap-xxhdpi_ic_launcher1_round.webp.flat",
