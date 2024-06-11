@@ -172,7 +172,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
   ### Code for Next Button
   
 
-     <!DOCTYPE html>
+    
 <html lang="en">
 <head>
     <meta charset="UTF-8">
