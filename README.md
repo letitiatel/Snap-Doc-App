@@ -150,6 +150,16 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
    
      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/d8d96382-9a95-426b-ad6b-005f611f6305">
 
+     DELETE OPTION
+
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/c2f2b738-b1e0-4ab0-b0de-aa1a893aec84">
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/2bc7cc25-70a8-406f-aa25-a7a9f61547e7">
+
+      
+
+
+   
+
    
 
 
