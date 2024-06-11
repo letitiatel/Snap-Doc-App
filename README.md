@@ -109,7 +109,17 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
    <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/028c0bf0-45e7-4af1-a8cb-1d475ae5b7f5">
 
+- Navigation bar
+
+   - app_bar_main.xml
+
+     <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/f8304198-1c7e-4fed-b7c3-d3ac5d1afe4e">
+
+ 
+     
+
   
+
 
 
 
