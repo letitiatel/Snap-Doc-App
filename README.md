@@ -130,8 +130,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
       Text recognition function
 
      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/c9d18d82-9311-4833-9d3d-020e7e352073">
-     
-   Image 
+     .
       <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/3ac7db16-4d79-4d6d-b95b-9cbba84fd392">
      
     
