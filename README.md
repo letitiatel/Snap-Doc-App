@@ -7,7 +7,7 @@ Project developed for the 'Software Development Methods' course within the Facul
 
 ## Describing the app - (non-tehnical description - user stories, backlog creation, features list, UML Use Case Diagram, App's behaviour description, App's appearance )
 
-Scan&Doc  is an app designed to effortlessly capture text from physical documents or images using your device's camera. With powerful OCR technology, it accurately extracts text and offers seamless conversion options, allowing you to save it as PDF, Word, or other popular formats. Edit, enhance, and manage your scanned documents with ease, and effortlessly share or sync them across devices. Whether you're a student, professional, or enthusiast, Scan&Doc simplifies text scanning and document management on the go.
+Scan&Doc  is an app designed to effortlessly capture text from images using your device's camera. With powerful OCR technology, it accurately extracts text and offers seamless conversion options, allowing you to save it as PDF. Edit, enhance, and manage your scanned documents with ease. Whether you're a student, professional, or enthusiast, Scan&Doc simplifies text scanning and document management on the go.
 
 ### 1. User Stories
 1.As a student, I want to use the device's camera to scan text from physical documents or images so that I can capture information for various purposes.
@@ -75,7 +75,7 @@ Snap&Doc allows users to scan text from photos taken instantly or from the galle
 
 4. Finalizing the List:
 
-- Once the list is accurate, users can review the extracted words and make any final adjustments. After confirming the list, users can proceed to convert the text into their desired format, such as PDF, DOCX, etc.
+- Once the list is accurate, users can review the extracted words and make any final adjustments. After confirming the list, users can proceed to convert the text into PDF.
 
 5. User Interface and Experience:
 
