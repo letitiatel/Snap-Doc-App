@@ -103,6 +103,16 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
   <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/325dbe8e-8b7e-4bb3-aee1-d2c5ff9b89b4">
 
+- Front Page design
+
+  -activity_main.xml
+
+   <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/028c0bf0-45e7-4af1-a8cb-1d475ae5b7f5">
+
+  
+
+
+
 
     
 
