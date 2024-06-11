@@ -56,11 +56,107 @@ We monitorized our backlog creation using Trello. It can be found [here](https:/
 
 ![MDS DIAGRAMA](https://github.com/letitiatel/Snap-Doc-App/assets/116514235/d5b29f16-0cd9-4e9c-8b53-a4bfeb3a1169)
 
+### 5.  App's behaviour description
 
-### 5. Source control
+Snap&Doc allows users to scan text from photos taken instantly or from the gallery. Once the text is extracted, it can be converted into various formats such as PDF, DOCX, and more. Users can edit the extracted text to correct any errors before conversion. Here is a detailed breakdown of how the app works:
+
+1. Scanning a Document:
+
+- The user can opt to take a new photo or select an existing one from the gallery.
+- The app will scan the photo and use OCR (Optical Character Recognition) technology to extract the text.
+
+2. Building a List of Extracted Words:
+
+- The extracted text is organized into a list format, displaying the words extracted from the scanned photo. This list can be used for further processing or conversion into various document formats.
+
+3. Editing the List:
+
+ - Users can modify the list to correct any mistakes by adding new words, deleting incorrect ones, or clearing the entire list. 
+
+4. Finalizing the List:
+
+- Once the list is accurate, users can review the extracted words and make any final adjustments. After confirming the list, users can proceed to convert the text into their desired format, such as PDF, DOCX, etc.
+
+5. User Interface and Experience:
+
+- The interface is designed to be intuitive, with clear instructions and easily accessible buttons for all major functions.
+- Real-time feedback and confirmation messages ensure users are aware of the actions they are performing.
+
+
+### 6. Source control
 Branches: [https://github.com/letitiatel/Snap-Doc-App/branches](https://github.com/letitiatel/Snap-Doc-App/branches)
 
 Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://github.com/letitiatel/Snap-Doc-App/commits/main/)
+
+### 7. App's appearance (design description)
+
+- App icon
+
+![WhatsApp Image 2024-06-11 at 13 19 19](https://github.com/letitiatel/Snap-Doc-App/assets/116514235/bc2d3855-a210-4f91-af4c-b63340d19690)
+
+- Welcome Page design - appears every time the app is opened
+
+  - activity_splash_screen.xml
+  - SplashScreen.java
+ 
+  
+
+  <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/325dbe8e-8b7e-4bb3-aee1-d2c5ff9b89b4">
+
+- Front Page design / Scanner page
+
+  -activity_main.xml
+
+   <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/028c0bf0-45e7-4af1-a8cb-1d475ae5b7f5">
+
+- Navigation bar
+
+   - app_bar_main.xml
+   - Text, Images, PDFS
+
+     <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/f8304198-1c7e-4fed-b7c3-d3ac5d1afe4e">
+
+ - Chose an image option
+
+   - takes the user to the gallery in order to select an image and Recognise Text - scans the image that was selected/ the user can take a photo and upload it into the app
+
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/58eba84c-ae78-4316-a06c-62116f52dfd2">
+
+     After the image was chosen we can convert it into a PDF or delete it
+     
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/8c3a7475-32e3-4279-a85f-523b6f3b9dfa">
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/3bcf2745-3774-41d3-b7f5-ae1bfd7adeac">
+
+      Text recognition function
+
+     <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/c9d18d82-9311-4833-9d3d-020e7e352073">
+   Image 
+   
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/3ac7db16-4d79-4d6d-b95b-9cbba84fd392">
+     
+    
+
+
+
+     
+      
+      
+     
+
+
+
+
+
+ 
+     
+
+  
+
+
+
+
+
+    
 
 
   
