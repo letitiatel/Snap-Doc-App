@@ -167,59 +167,191 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
    - info: the first activity that starts when the app launches and acts as a welcome/ loading page
    - behaviour: starts every time the app launches, runs for 5 seconds and then reddirects to main activity
-     
+
+     #splash.html - pentru animatie
+
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            overflow: hidden;
+        }
+        .phone {
+            position: relative;
+            width: 100px;
+            height: 200px;
+            border: 5px solid #8e44ad; /* Mov */
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scanner {
+            position: absolute;
+            width: 5px;
+            height: 200px;
+            background: linear-gradient(to bottom, rgba(142, 68, 173, 0) 0%, rgba(142, 68, 173, 0.5) 50%, rgba(142, 68, 173, 0) 100%);
+            animation: scan 2s infinite;
+        }
+        @keyframes scan {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+        .scan-line {
+            position: absolute;
+            width: 100vw;
+            height: 5px;
+            background: #8e44ad;
+            animation: scan-line 2s infinite;
+        }
+        @keyframes scan-line {
+            0% {
+                top: 50%;
+                opacity: 0;
+            }
+            50% {
+                top: 50%;
+                opacity: 1;
+            }
+            100% {
+                top: 50%;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="phone">
+    <div class="scanner"></div>
+</div>
+<div class="scan-line"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        console.log("Splash screen started");
+    });
+</script>
+</body>
+</html>
+
+
+ # bottom navigation - bara de jos
+
+ <?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/bottom_menu_text"
+        android:icon="@drawable/ic_text"
+        android:title="Text" />
+
+    <item android:id="@+id/bottom_menu_images"
+        android:title="Images"
+        android:icon="@drawable/ic_image_black"/>
+
+    <item android:id="@+id/bottom_menu_pdfs"
+        android:icon="@drawable/ic_image_black"
+        android:title="PDFs"/>
+
+</menu>
+
+# menu_images - bara de meniu, identica pt paginle de pdf si text
+
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/images_item_delete"
+        android:icon="@drawable/ic_delete_white"
+        app:showAsAction="always"
+        android:title="Delete"/>
+
+    <item android:id="@+id/images_item_pdf"
+        android:title="Convert To Pdf"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_pdf_pink"/>
+</menu>
+
+
+# fragment_text_list.xml - pagina de text
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TextViewFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottomNavigationView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/recognizeTextButton"
+                android:layout_width="208dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="Recognize Text"
+                app:cornerRadius="5dp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageIq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_baseline_image_24"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recognised text: "
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/recognisedTextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
  
-   
-
-
-
-
-
-
-
-
-      
-
-
-   
-
-   
-
-
-
-
-
-   
-
-  
-     
-    
-
-
-
-
-     
-      
-      
-     
-
-
-
-
-
- 
-     
-
-  
-
-
-
-
-
-    
-
-
-  
-
-
-
