@@ -171,33 +171,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
  
   ### Code for Splash Screen
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splash Screen</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #000;
-            overflow: hidden;
-        }
-        .phone {
-            position: relative;
-            width: 100px;
-            height: 200px;
-            border: 5px solid #8e44ad; /* Mov */
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .scanner {
+ .scanner {
             position: absolute;
             width: 5px;
             height: 200px;
@@ -233,21 +207,6 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
                 opacity: 0;
             }
         }
-    </style>
-</head>
-<body>
-<div class="phone">
-    <div class="scanner"></div>
-</div>
-<div class="scan-line"></div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        console.log("Splash screen started");
-    });
-</script>
-</body>
-</html>
-  
 
    
 
