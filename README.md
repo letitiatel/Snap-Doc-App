@@ -56,8 +56,34 @@ We monitorized our backlog creation using Trello. It can be found [here](https:/
 
 ![MDS DIAGRAMA](https://github.com/letitiatel/Snap-Doc-App/assets/116514235/d5b29f16-0cd9-4e9c-8b53-a4bfeb3a1169)
 
+### 5.  App's behaviour description
 
-### 5. Source control
+Snap&Doc allows users to scan text from photos taken instantly or from the gallery. Once the text is extracted, it can be converted into various formats such as PDF, DOCX, and more. Users can edit the extracted text to correct any errors before conversion. Here is a detailed breakdown of how the app works:
+
+1.Scanning a Document:
+
+- The user can opt to take a new photo or select an existing one from the gallery.
+- The app will scan the photo and use OCR (Optical Character Recognition) technology to extract the text.
+
+2.Building a List of Extracted Words:
+
+- The extracted text is organized into a list format, displaying the words extracted from the scanned photo. This list can be used for further processing or conversion into various document formats.
+
+3.Editing the List:
+
+ - Users can modify the list to correct any mistakes by adding new words, deleting incorrect ones, or clearing the entire list. 
+
+4.Finalizing the List:
+
+- Once the list is accurate, users can review the extracted words and make any final adjustments. After confirming the list, users can proceed to convert the text into their desired format, such as PDF, DOCX, etc.
+
+5.User Interface and Experience:
+
+- The interface is designed to be intuitive, with clear instructions and easily accessible buttons for all major functions.
+- Real-time feedback and confirmation messages ensure users are aware of the actions they are performing.
+
+
+### 6. Source control
 Branches: [https://github.com/letitiatel/Snap-Doc-App/branches](https://github.com/letitiatel/Snap-Doc-App/branches)
 
 Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://github.com/letitiatel/Snap-Doc-App/commits/main/)
