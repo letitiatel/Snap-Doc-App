@@ -98,6 +98,8 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
   - activity_splash_screen.xml
   - SplashScreen.java
+ 
+  
 
   <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/325dbe8e-8b7e-4bb3-aee1-d2c5ff9b89b4">
 
