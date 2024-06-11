@@ -54,7 +54,7 @@ We monitorized our backlog creation using Trello. It can be found [here](https:/
 
 ### 5.  App's behaviour description
 
-Snap&Doc allows users to scan text from photos taken instantly or from the gallery. Once the text is extracted, it can be converted into various formats such as PDF, DOCX, and more. Users can edit the extracted text to correct any errors before conversion. Here is a detailed breakdown of how the app works:
+Snap&Doc allows users to scan text from photos taken instantly or from the gallery. Once the text is extracted, it can be converted into various formats such as PDF. Users can edit the extracted text to correct any errors before conversion. Here is a detailed breakdown of how the app works:
 
 1. Scanning a Document:
 
