@@ -411,6 +411,42 @@ These functions can be found in fragment_text_list.xml file.
 <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/958a53b7-a5ea-4b2b-9a90-dd329c5d1b91">
 
 
+## Refactoring - Code standards
+
+## Using an AI tool that assists during software development
+   ML Kit used to recognize text from an image
+
+     private void recognizeText(Bitmap bitmap) {
+        InputImage image = InputImage.fromBitmap(bitmap, 0);
+        TextRecognizer recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
+
+        recognizer.process(image)
+                .addOnSuccessListener(new com.google.android.gms.tasks.OnSuccessListener<Text>() {
+                    @Override
+                    public void onSuccess(Text visionText) {
+                        displayRecognizedText(visionText);
+                    }
+                })
+                .addOnFailureListener(new com.google.android.gms.tasks.OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        recognisedText.setText(R.string.text_recognition_failed);
+                    }
+                });
+    }
+
+ 
+ link Firebase - https://firebase.google.com/docs/ml-kit/recognize-text
+
+
+
+
+
+
+
+
+
+
 
 
  
