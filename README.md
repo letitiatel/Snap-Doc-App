@@ -169,7 +169,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
    - behaviour: starts every time the app launches, runs for 5 seconds and then reddirects to main activity
    - splash.html
 
- ### Code for bottom navigation 
+ ### Code for Bottom Navigation 
 
  <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
@@ -193,7 +193,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
 These functions can be found in bottom_navigation.xml file.
 
-# menu_images - bara de meniu, identica pt paginle de pdf si text
+### Code for Menu Bar which is the same for the pdf and text pages
 
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
@@ -210,8 +210,11 @@ These functions can be found in bottom_navigation.xml file.
         android:icon="@drawable/ic_pdf_pink"/>
 </menu>
 
+This code can be found in the menu_images file.
 
-# fragment_text_list.xml - pagina de text
+
+
+### Code for Text Page
 
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -278,8 +281,10 @@ These functions can be found in bottom_navigation.xml file.
 
 </RelativeLayout>
 
+These functions can be found in fragment_text_list.xml file. 
 
- # convert images to pdf
+
+ ### Converts images to pdf
 
  private void convertImagesToPdf(boolean convertAll) {
         Log.d(TAG, "convertImagesToPdf: convertAll: " + convertAll);
@@ -310,7 +315,7 @@ These functions can be found in bottom_navigation.xml file.
                 Log.d(TAG, "run: imagesToPdfList size: " + imagesToPdfList.size());
 
 
-# delete images
+###  Delete images
 
 private void deleteImages(boolean deleteAll) {
         if (deleteAll) {
@@ -338,7 +343,7 @@ private void deleteImages(boolean deleteAll) {
                 }
             }
 
-# pick image from camera
+### Picks image from camera
 
 private void pickImageCamera() {
         //android.util.Log.d(TAG, "pickImageCamera: ");
@@ -355,7 +360,7 @@ private void pickImageCamera() {
         cameraActivityResultLauncher.launch(intent);
     }
 
- # proces image captured by camera
+ ### Proces image captured by camera
 
  private void processCapturedImage(Uri imageUri) {
         try {
@@ -383,7 +388,7 @@ private void pickImageCamera() {
         }
     }
 
-# pick imge from gallery
+### Picks image from gallery
 
 private void pickImageGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
