@@ -283,4 +283,70 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
     </ScrollView>
 
 </RelativeLayout>
+
+
+ # convert images to pdf
+
+ private void convertImagesToPdf(boolean convertAll) {
+        Log.d(TAG, "convertImagesToPdf: convertAll: " + convertAll);
+
+        progressDialog.setMessage("Converting to PDF...");
+        progressDialog.show();
+
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+        Handler handler = new Handler(Looper.getMainLooper());
+
+        executorService.execute(new Runnable() {
+            @Override
+            public void run(){
+
+               // here we will do background  task to convert all/selected images to pdf
+            public void run() {
+                Log.d(TAG, "run: BG work start:..");
+                ArrayList<ModelImage> imagesToPdfList = new ArrayList<>();
+                if (convertAll) {
+                    imagesToPdfList = allImageArrayList;
+                } else {
+                    for (int i = 0; i < allImageArrayList.size(); i++) {
+                        if (allImageArrayList.get(i).isChecked()) {
+                            imagesToPdfList.add(allImageArrayList.get(i));
+                        }
+                    }
+                }
+                Log.d(TAG, "run: imagesToPdfList size: " + imagesToPdfList.size());
+
+
+# delete images
+
+private void deleteImages(boolean deleteAll) {
+        if (deleteAll) {
+            progressDialog.setMessage("Deleting All Images...");
+            progressDialog.show();
+
+            for (int i = 0; i < allImageArrayList.size(); i++) {
+                Uri imageUriToDelete = allImageArrayList.get(i).getImageUri();
+                mContext.getContentResolver().delete(imageUriToDelete, null, null);
+            }
+
+            allImageArrayList.clear();
+            adapterImage.notifyDataSetChanged();
+            progressDialog.dismiss();
+
+            Toast.makeText(mContext, "All Images Deleted...", Toast.LENGTH_SHORT).show();
+        } else {
+            progressDialog.setMessage("Deleting Selected Images...");
+            progressDialog.show();
+
+            for (int i = 0; i < allImageArrayList.size(); i++) {
+                if (allImageArrayList.get(i).isChecked()) {
+                    Uri imageUriToDelete = allImageArrayList.get(i).getImageUri();
+                    mContext.getContentResolver().delete(imageUriToDelete, null, null);
+                }
+            }
+
+            loadImages();
+            progressDialog.dismiss();
+        }
+    }
+
  
