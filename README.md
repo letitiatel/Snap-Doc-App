@@ -168,7 +168,8 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
    - info: the first activity that starts when the app launches and acts as a welcome/ loading page
    - behaviour: starts every time the app launches, runs for 5 seconds and then reddirects to main activity
 
-     #splash.html - pentru animatie
+  
+     Code for Splash Screen
 
      <!DOCTYPE html>
 <html lang="en">
@@ -246,6 +247,8 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 </script>
 </body>
 </html>
+
+These functions can be found in Splash.html file.
 
 
  # bottom navigation - bara de jos
