@@ -52,6 +52,7 @@ import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.snapdoc.adapters.AdapterImage;
+import com.example.snapdoc.adapters.AdapterImageView;
 import com.example.snapdoc.models.ModelImage;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

@@ -2,10 +2,12 @@ package com.example.snapdoc.adapters;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -13,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.snapdoc.R;
+import com.example.snapdoc.activities.ImageViewActivity;
 import com.example.snapdoc.models.ModelImage;
 
 import java.util.ArrayList;
@@ -44,12 +47,13 @@ public class AdapterImageView extends RecyclerView.Adapter<AdapterImageView.Hold
                 .placeholder(R.drawable.ic_image_black)
                 .into(holder.imageIv);
 
-        holder.imageIv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showLargeImage(imageUri);
-            }
+        holder.imageIv.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ImageViewActivity.class);
+            intent.putExtra("imageUri", imageUri.toString());
+            context.startActivity(intent);
         });
+
+
     }
 
     @Override
