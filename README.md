@@ -353,6 +353,34 @@ private void pickImageCamera() {
         cameraActivityResultLauncher.launch(intent);
     }
 
+ # proces image captured by camera
+
+ private void processCapturedImage(Uri imageUri) {
+        try {
+            Bitmap bitmap;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                bitmap = ImageDecoder.decodeBitmap(ImageDecoder.createSource(mContext.getContentResolver(), imageUri));
+            } else {
+                bitmap = MediaStore.Images.Media.getBitmap(mContext.getContentResolver(), imageUri);
+            }
+
+            // Extrage textul din imagine folosind Firebase ML Kit
+            Log.d(TAG, "processCapturedImage: Extracting text from image");
+            //extractTextFromImage(bitmap);
+
+            // Actualizarea ImageView cu imaginea capturată
+            imageView.setImageBitmap(bitmap);
+
+            // Salvează imaginea în directorul aplicației și adaugă în listă
+            saveImageToAppLevelDirectory(imageUri);
+            ModelImage modelImage = new ModelImage(imageUri, false);
+            allImageArrayList.add(modelImage);
+            adapterImage.notifyItemInserted(allImageArrayList.size());
+        } catch (Exception e) {
+            Log.e(TAG, "Error processing captured image", e);
+        }
+    }
+
 # pick imge from gallery
 
 private void pickImageGallery() {
