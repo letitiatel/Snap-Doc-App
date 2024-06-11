@@ -160,6 +160,9 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/c5fc5f23-1a4b-4def-8f54-76d9614cce66">
      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/00a8d8ae-0808-4468-9eba-72df5ac558e0">
+
+ ## Describing the code (tehnical - Functions and proprieties, Tehnical Description of behaviour)
+ 
    
 
 
