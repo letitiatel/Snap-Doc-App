@@ -103,7 +103,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
   <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/325dbe8e-8b7e-4bb3-aee1-d2c5ff9b89b4">
 
-- Front Page design
+- Front Page design / Scanner page
 
   -activity_main.xml
 
@@ -112,8 +112,26 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 - Navigation bar
 
    - app_bar_main.xml
+   - Text, Images, PDFS
 
      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/f8304198-1c7e-4fed-b7c3-d3ac5d1afe4e">
+
+ - Chose an image option
+
+   - takes the user to the gallery in order to select an image and Recognise Text - scans the image that was selected/ the user can take a photo and upload it into the app
+
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/58eba84c-ae78-4316-a06c-62116f52dfd2">
+
+     After the image was chosen we can choose to convert in into a PDF or delete it
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/8c3a7475-32e3-4279-a85f-523b6f3b9dfa">
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/3bcf2745-3774-41d3-b7f5-ae1bfd7adeac">
+      
+      
+     
+
+
+
+
 
  
      
