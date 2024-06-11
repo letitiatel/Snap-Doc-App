@@ -94,6 +94,15 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
 ![WhatsApp Image 2024-06-11 at 13 19 19](https://github.com/letitiatel/Snap-Doc-App/assets/116514235/bc2d3855-a210-4f91-af4c-b63340d19690)
 
+- Welcome Page design - appears every time the app is opened
+
+  - activity_splash_screen.xml
+  - SplashScreen.java
+ 
+  ![OPENPAGE](https://github.com/letitiatel/Snap-Doc-App/assets/116514235/325dbe8e-8b7e-4bb3-aee1-d2c5ff9b89b4)
+
+    
+
 
   
 
