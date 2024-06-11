@@ -10,33 +10,32 @@ Project developed for the 'Software Development Methods' course within the Facul
 Scan&Doc  is an app designed to effortlessly capture text from images using your device's camera. With powerful OCR technology, it accurately extracts text and offers seamless conversion options, allowing you to save it as PDF. Edit, enhance, and manage your scanned documents with ease. Whether you're a student, professional, or enthusiast, Scan&Doc simplifies text scanning and document management on the go.
 
 ### 1. User Stories
-1.As a student, I want to use the device's camera to scan text from physical documents or images so that I can capture information for various purposes.
+1.As a user, I want to upload a photo from my gallery so that I can extract text from it.
 
-2.As a journalist, I want to convert scanned text into PDF format so that I can easily share and view the documents.
+2.As a user, I want to convert scanned text into PDF format so that I can easily share and view the documents.
 
-3.As a business professional, I want to edit the scanned text within the app before saving it to a document format.
+3.As a user, I want to edit the extracted text so that I can correct any errors before saving or converting it.
 
-4.As a researcher, I want to manage my scanned documents by renaming, deleting, or sharing them.
+4.As a user, I want to manage my scanned documents by renaming, deleting, or sharing them.
 
-5.As a teacher, I want to convert scanned text into different fonts so that I can customize the appearance of my documents.
+5.As a user, I want to scan a document with my camera so that I can extract the text for digital use.
 
-6.As a legal assistant, I want to choose a photo from the gallery or Drive to scan text so that I can work with existing images.
+6.As a user, I want to save the extracted text directly as a plain text file so that I can use it in different applications.
 
-7.As a traveler, I want to scan travel itineraries and save them as PDFs on my phone for offline access during my trip.
+7.As a user, I want to view the extracted text in a list format so that I can easily see all the words.
 
-8.As a writer, I want to convert scanned text into Word documents so that I can edit and format the text as needed.
+8.As a user, I want to easily navigate between different functions of the app (e.g., scanning, editing, converting) so that my experience is seamless.
 
-9.As a teacher, I want to customize the font style, size, and color of the scanned text to enhance readability.
+9.As a user, I want to rename the PDF file after it has been created so that I can organize my documents more effectively.
 
-10.As a language learner, I need to scan foreign language texts and save them as PDFs for later translation and study.
+10.As a user, I want to save the converted PDF to a specific location on my device so that I can easily find it later.
 
-11.As a medical professional, I want to scan patient charts and save them as PDFs securely for digital record-keeping and compliance with privacy regulations.
+11.As a user, I want to share the PDF file directly from the app so that I can quickly send it to others.
 
-12.As a designer, I need to scan sketches and save them as editable vector files, such as SVG or EPS, for further refinement in graphic design software.
+12.As a user, I want to have a history of recently created PDF files within the app so that I can easily access my previous documents.
 
-13.As a real estate agent, I need to scan property listings and save them as PDFs to share with potential buyers or renters during property viewings.
+13.As a user, I want to delete the PDF files from the app’s history so that I can manage my storage space efficiently.
 
-14.As a project manager, I want to view the scanned documents within the app so that I can verify the scanned content.
 
 ### 2. Backlog Creation
 We monitorized our backlog creation using Trello. It can be found [here](https://trello.com/b/Y3UW7ffC/scandoc-app).
@@ -47,8 +46,7 @@ We monitorized our backlog creation using Trello. It can be found [here](https:/
 
 ### 3. Features List
 - Ability to use the device's camera to scan text from physical documents or images.
-- Manual adjustment options for text cropping and rotation.
-- Chosing a photo from the gallery/ from Drive.
+- Chosing a photo from the gallery.
 - Viewing, organizing, and managing scanned documents.
 - Options to rename, delete, or share scanned documents.
 
