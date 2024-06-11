@@ -156,6 +156,14 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
       <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/19bed8f8-976e-45bf-8f7f-2606905a1a9a">
       <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/ef5905fa-9198-497b-b9c7-6686369196ce">
 
+     Share Option
+
+     <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/c5fc5f23-1a4b-4def-8f54-76d9614cce66">
+     <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/00a8d8ae-0808-4468-9eba-72df5ac558e0">
+   
+
+
+
 
 
 
