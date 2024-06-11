@@ -336,6 +336,30 @@ private void deleteImages(boolean deleteAll) {
                 }
             }
 
+# pick image from camera
+
+private void pickImageCamera() {
+        //android.util.Log.d(TAG, "pickImageCamera: ");
+        Log.d(TAG, "pickImageCamera: ");
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(MediaStore.Images.Media.TITLE, "TEMP IMAGE TITLE");
+        contentValues.put(MediaStore.Images.Media.DESCRIPTION, "TEMP IMAGE DESCRIPTION");
+
+        imageUri = mContext.getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
+
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+        cameraActivityResultLauncher.launch(intent);
+    }
+
+# pick imge from gallery
+
+private void pickImageGallery() {
+        Intent intent = new Intent(Intent.ACTION_PICK);
+        intent.setType("image/*");
+        galleryActivityResultLauncher.launch(intent);
+    }
             loadImages();
             progressDialog.dismiss();
         }
