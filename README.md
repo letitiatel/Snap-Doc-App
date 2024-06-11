@@ -138,6 +138,12 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
     <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/2185a51c-8752-4bd9-a0a9-65355f97efe5">
 
+   Modify the text
+
+    <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/aec5b0e2-0272-4ff4-a7c7-decd78b38956">
+
+   
+
   
      
     
