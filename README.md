@@ -163,7 +163,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
  ## Describing the code (tehnical - Functions and proprieties, Tehnical Description of behaviour)
 
-  - Splash Screen 
+ - Splash Screen 
 
    - info: the first activity that starts when the app launches and acts as a welcome/ loading page
    - behaviour: starts every time the app launches, runs for 5 seconds and then reddirects to main activity
