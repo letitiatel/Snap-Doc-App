@@ -286,7 +286,7 @@ These functions can be found in fragment_text_list.xml file.
 
  ### Converts images to pdf
 
- private void convertImagesToPdf(boolean convertAll) {
+     private void convertImagesToPdf(boolean convertAll) {
         Log.d(TAG, "convertImagesToPdf: convertAll: " + convertAll);
 
         progressDialog.setMessage("Converting to PDF...");
@@ -317,7 +317,7 @@ These functions can be found in fragment_text_list.xml file.
 
 ###  Delete images
 
-private void deleteImages(boolean deleteAll) {
+    private void deleteImages(boolean deleteAll) {
         if (deleteAll) {
             progressDialog.setMessage("Deleting All Images...");
             progressDialog.show();
@@ -345,7 +345,7 @@ private void deleteImages(boolean deleteAll) {
 
 ### Picks image from camera
 
-private void pickImageCamera() {
+    private void pickImageCamera() {
         //android.util.Log.d(TAG, "pickImageCamera: ");
         Log.d(TAG, "pickImageCamera: ");
 
@@ -362,7 +362,7 @@ private void pickImageCamera() {
 
  ### Proces image captured by camera
 
- private void processCapturedImage(Uri imageUri) {
+     private void processCapturedImage(Uri imageUri) {
         try {
             Bitmap bitmap;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
@@ -390,7 +390,7 @@ private void pickImageCamera() {
 
 ### Picks image from gallery
 
-private void pickImageGallery() {
+    private void pickImageGallery() {
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
         galleryActivityResultLauncher.launch(intent);
