@@ -151,6 +151,16 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
       <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/c2f2b738-b1e0-4ab0-b0de-aa1a893aec84">
       <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/2bc7cc25-70a8-406f-aa25-a7a9f61547e7">
 
+     Rename Option
+
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/19bed8f8-976e-45bf-8f7f-2606905a1a9a">
+      <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/ef5905fa-9198-497b-b9c7-6686369196ce">
+
+
+
+
+
+
       
 
 
