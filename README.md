@@ -123,6 +123,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
       <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/58eba84c-ae78-4316-a06c-62116f52dfd2">
 
      After the image was chosen we can choose to convert in into a PDF or delete it
+     
       <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/8c3a7475-32e3-4279-a85f-523b6f3b9dfa">
       <img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/3bcf2745-3774-41d3-b7f5-ae1bfd7adeac">
       
