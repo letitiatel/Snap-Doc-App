@@ -42,7 +42,6 @@ public class AdapterImage extends RecyclerView.Adapter<AdapterImage.HolderImage>
     public void onBindViewHolder(@NonNull HolderImage holder, int position) {
 
         ModelImage modelImage = imageArrayList.get(position);
-
         Uri imageUri = modelImage.getImageUri();
 
         Glide.with(context)
@@ -50,14 +49,10 @@ public class AdapterImage extends RecyclerView.Adapter<AdapterImage.HolderImage>
                 .placeholder(R.drawable.ic_image_black)
                 .into(holder.imageIv);
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, ImageViewActivity.class);
-                intent.putExtra("imageUri", " " + imageUri);
-                context.startActivity(intent);
-
-            }
+        holder.imageIv.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ImageViewActivity.class);
+            intent.putExtra("imageUri", imageUri.toString());
+            context.startActivity(intent);
         });
 
 
