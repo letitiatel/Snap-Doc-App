@@ -20,21 +20,19 @@ Scan&Doc  is an app designed to effortlessly capture text from images using your
 
 5.As a user, I want to scan a document with my camera so that I can extract the text for digital use.
 
-6.As a user, I want to save the extracted text directly as a plain text file so that I can use it in different applications.
+6.As a user, I want to view the extracted text in a list format so that I can easily see all the words.
 
-7.As a user, I want to view the extracted text in a list format so that I can easily see all the words.
+7.As a user, I want to easily navigate between different functions of the app (e.g., scanning, editing, converting) so that my experience is seamless.
 
-8.As a user, I want to easily navigate between different functions of the app (e.g., scanning, editing, converting) so that my experience is seamless.
+8.As a user, I want to rename the PDF file after it has been created so that I can organize my documents more effectively.
 
-9.As a user, I want to rename the PDF file after it has been created so that I can organize my documents more effectively.
+9.As a user, I want to save the converted PDF to a specific location on my device so that I can easily find it later.
 
-10.As a user, I want to save the converted PDF to a specific location on my device so that I can easily find it later.
+10.As a user, I want to share the PDF file directly from the app so that I can quickly send it to others.
 
-11.As a user, I want to share the PDF file directly from the app so that I can quickly send it to others.
+11.As a user, I want to have a history of recently created PDF files within the app so that I can easily access my previous documents.
 
-12.As a user, I want to have a history of recently created PDF files within the app so that I can easily access my previous documents.
-
-13.As a user, I want to delete the PDF files from the app’s history so that I can manage my storage space efficiently.
+12.As a user, I want to delete the PDF files from the app’s history so that I can manage my storage space efficiently.
 
 
 ### 2. Backlog Creation
