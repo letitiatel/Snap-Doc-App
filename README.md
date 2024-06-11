@@ -413,6 +413,12 @@ These functions can be found in fragment_text_list.xml file.
 
 ## Refactoring - Code standards
 
+Enhancing Maintainability:
+
+ - Adding comments and documentation to make the code easier to understand.
+ - Refactoring to follow consistent coding standards and conventions.
+ - Renaming variables, methods, and classes to more meaningful names.
+
 ## Using an AI tool that assists during software development
    ML Kit used to recognize text from an image
 
