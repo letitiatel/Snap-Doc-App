@@ -167,51 +167,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 
    - info: the first activity that starts when the app launches and acts as a welcome/ loading page
    - behaviour: starts every time the app launches, runs for 5 seconds and then reddirects to main activity
-
- 
-  ### Code for Splash Screen
-
- .scanner {
-            position: absolute;
-            width: 5px;
-            height: 200px;
-            background: linear-gradient(to bottom, rgba(142, 68, 173, 0) 0%, rgba(142, 68, 173, 0.5) 50%, rgba(142, 68, 173, 0) 100%);
-            animation: scan 2s infinite;
-        }
-        @keyframes scan {
-            0% {
-                transform: translateY(-100%);
-            }
-            100% {
-                transform: translateY(100%);
-            }
-        }
-        .scan-line {
-            position: absolute;
-            width: 100vw;
-            height: 5px;
-            background: #8e44ad;
-            animation: scan-line 2s infinite;
-        }
-        @keyframes scan-line {
-            0% {
-                top: 50%;
-                opacity: 0;
-            }
-            50% {
-                top: 50%;
-                opacity: 1;
-            }
-            100% {
-                top: 50%;
-                opacity: 0;
-            }
-        }
-
-   
-
-
-
+   - splash.html
 
  # bottom navigation - bara de jos
 
