@@ -22,14 +22,9 @@ public final class ActivityImageViewBinding implements ViewBinding {
   @NonNull
   public final ImageView imageIv;
 
-  @NonNull
-  public final RelativeLayout main;
-
-  private ActivityImageViewBinding(@NonNull RelativeLayout rootView, @NonNull ImageView imageIv,
-      @NonNull RelativeLayout main) {
+  private ActivityImageViewBinding(@NonNull RelativeLayout rootView, @NonNull ImageView imageIv) {
     this.rootView = rootView;
     this.imageIv = imageIv;
-    this.main = main;
   }
 
   @Override
@@ -65,9 +60,7 @@ public final class ActivityImageViewBinding implements ViewBinding {
         break missingId;
       }
 
-      RelativeLayout main = (RelativeLayout) rootView;
-
-      return new ActivityImageViewBinding((RelativeLayout) rootView, imageIv, main);
+      return new ActivityImageViewBinding((RelativeLayout) rootView, imageIv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

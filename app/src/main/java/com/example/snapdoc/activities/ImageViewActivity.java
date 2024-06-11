@@ -23,9 +23,11 @@ public class ImageViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_view);
 
-        getSupportActionBar().setTitle("ImageView");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("ImageView");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
 
         imageIv = findViewById(R.id.imageIv);
 
@@ -33,11 +35,14 @@ public class ImageViewActivity extends AppCompatActivity {
         imageUri = getIntent().getStringExtra("imageUri");
         Log.d(TAG, "onCreate: Image: " + imageUri);
 
-        // Load image using Glide
-        Glide.with(this)
-                .load(imageUri)
-                .placeholder(R.drawable.ic_image_black)
-                .into(imageIv);
+        if (imageUri != null && !imageUri.isEmpty()) {
+            // Load image using Glide
+            Glide.with(this)
+                    .load(Uri.parse(imageUri))
+                    .into(imageIv);
+        } else {
+            Log.e(TAG, "Image URI is null or empty");
+        }
 
         imageIv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,8 +68,7 @@ public class ImageViewActivity extends AppCompatActivity {
 
         // Load the large image using Glide
         Glide.with(this)
-                .load(imageUri)
-                .placeholder(R.drawable.ic_image_black)
+                .load(Uri.parse(imageUri))
                 .into(largeImageView);
 
         // Enable the dialog to close when touching outside of it
