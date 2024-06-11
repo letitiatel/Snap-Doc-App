@@ -169,7 +169,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
    - behaviour: starts every time the app launches, runs for 5 seconds and then reddirects to main activity
    - splash.html
 
- # bottom navigation - bara de jos
+ ### Code for bottom navigation 
 
  <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
@@ -190,6 +190,8 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
         android:title="PDFs"/>
 
 </menu>
+
+These functions can be found in bottom_navigation.xml file.
 
 # menu_images - bara de meniu, identica pt paginle de pdf si text
 
