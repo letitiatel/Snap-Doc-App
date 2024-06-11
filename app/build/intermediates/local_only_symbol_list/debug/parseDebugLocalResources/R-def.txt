@@ -87,6 +87,8 @@ id recyclerview_transform
 id renameBtn
 id sizeTv
 id textView
+id text_item_delete
+id text_item_pdf
 id text_reflow
 id text_settings
 id text_slideshow
@@ -118,6 +120,7 @@ layout row_pdf
 layout row_pdf_view
 menu bottom_navigation
 menu menu_images
+menu menu_text
 menu navigation_drawer
 menu overflow
 mipmap appicon

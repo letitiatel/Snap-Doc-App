@@ -3738,6 +3738,8 @@ id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_item_delete
+id text_item_pdf
 id text_reflow
 id text_settings
 id text_slideshow
@@ -4013,6 +4015,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_navigation
 menu menu_images
+menu menu_text
 menu navigation_drawer
 menu overflow
 mipmap appicon
