@@ -249,7 +249,7 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
 </body>
 </html>
 
-These functions can be found in Splash.html file.
+
 
 
  # bottom navigation - bara de jos
