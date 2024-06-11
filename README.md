@@ -88,6 +88,12 @@ Branches: [https://github.com/letitiatel/Snap-Doc-App/branches](https://github.c
 
 Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://github.com/letitiatel/Snap-Doc-App/commits/main/)
 
+### 7. App's appearance (design description)
+
+- App icon
+
+![WhatsApp Image 2024-06-11 at 13 19 19](https://github.com/letitiatel/Snap-Doc-App/assets/116514235/bc2d3855-a210-4f91-af4c-b63340d19690)
+
 
   
 
