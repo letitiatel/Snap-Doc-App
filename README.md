@@ -400,4 +400,17 @@ These functions can be found in fragment_text_list.xml file.
         }
     }
 
+## Report bug and resolve it with pull request
+
+### Discovered bug
+
+<img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/8eafa3be-cba5-4871-add9-5c93f63272f1">
+
+### Fixed bug with pull request
+
+<img width="300" src="https://github.com/letitiatel/Snap-Doc-App/assets/116514235/958a53b7-a5ea-4b2b-9a90-dd329c5d1b91">
+
+
+
+
  
