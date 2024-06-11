@@ -169,7 +169,6 @@ Commits: [https://github.com/letitiatel/Snap-Doc-App/commits/main/](https://gith
    - behaviour: starts every time the app launches, runs for 5 seconds and then reddirects to main activity
 
   
-     Code for Splash Screen
 
      <!DOCTYPE html>
 <html lang="en">
